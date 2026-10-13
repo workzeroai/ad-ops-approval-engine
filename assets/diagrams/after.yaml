@@ -1,0 +1,28 @@
+# 개선 후: 데이터 진단 → 규칙 조정안 → 브리핑 → 사람 승인 → 반영 → 재조회 검증 → (실패 시) 롤백
+# 생성: python ../../../_design/excalidraw_kit.py after.yaml --out . --export
+name: after
+title: 개선 후 — 브리핑 보고 승인만
+subtitle: 제안은 규칙이 자동으로, 반영은 승인한 것만, 결과는 다시 조회해 확인
+layout: grid
+gapX: 70
+gapY: 80
+maxTextWidth: 200
+nodes:
+  - {id: collect, label: "광고 API에서\n실적 자동 수집", role: info, col: 0, row: 0}
+  - {id: diag, label: "진단 + YAML 규칙\n조정안·근거 문장", role: primary, col: 0, row: 1}
+  - {id: brief, label: "아침 브리핑\n(경보·조정 후보)", role: primary, col: 0, row: 2}
+  - {id: approve, label: "사람 승인\n(건별·일괄)", role: warning, shape: diamond, col: 0, row: 3}
+  - {id: apply, label: "API 반영\n→ 재조회 검증", role: success, col: 0, row: 4}
+  - {id: hold, label: "보류·거절\n기록", role: neutral, shape: ellipse, col: 1, row: 3}
+  - {id: rollback, label: "검증 실패 → 중단\n실행 ID로 롤백", role: danger, col: 1, row: 4}
+  - {id: log, label: "감사 로그\n(모든 단계)", role: neutral, col: 1, row: 1}
+edges:
+  - {from: collect, to: diag}
+  - {from: diag, to: brief}
+  - {from: brief, to: approve}
+  - {from: approve, to: apply, label: 승인, role: success}
+  - {from: approve, to: hold, label: 거절, role: neutral}
+  - {from: apply, to: rollback, label: 실패, role: danger}
+  - {from: diag, to: log, style: dashed}
+zones:
+  - {id: human, label: 사람이 하는 일, nodes: [approve, hold], role: warning}

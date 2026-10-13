@@ -1,0 +1,21 @@
+# 개선 전: 사람이 매일 계정마다 콘솔에 들어가 확인하고 직접 고치는 흐름 (일반화한 예시)
+# 생성: python ../../../_design/excalidraw_kit.py before.yaml --out . --export
+name: before
+title: 개선 전 — 매일 손으로 확인·수정
+subtitle: 계정마다 같은 일을 반복하고, 무엇을 왜 바꿨는지 남지 않는다
+layout: vertical
+gapY: 60
+maxTextWidth: 230
+nodes:
+  - {id: ask, label: "요청\n\"순위 좀 올려 주세요\"", role: info, col: 0, row: 0}
+  - {id: login, label: "계정마다 광고 콘솔 접속\n지표를 엑셀로 옮겨 정리", role: neutral, col: 0, row: 1}
+  - {id: judge, label: "감으로 판단\n(입찰가부터 올림)", role: warning, shape: diamond, col: 0, row: 2}
+  - {id: edit, label: "콘솔에서 직접 수정\n(검토자 없음)", role: neutral, col: 0, row: 3}
+  - {id: miss, label: "예산이 오후에 소진돼도\n원인을 모름", role: danger, col: 1, row: 2}
+  - {id: nolog, label: "기록·되돌리기 없음\n반영됐는지 확인 안 함", role: danger, shape: ellipse, col: 0, row: 4}
+edges:
+  - {from: ask, to: login}
+  - {from: login, to: judge}
+  - {from: judge, to: miss, label: 놓침, role: danger, style: dashed}
+  - {from: judge, to: edit}
+  - {from: edit, to: nolog}

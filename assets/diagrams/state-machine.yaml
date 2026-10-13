@@ -1,0 +1,33 @@
+# 실행 상태 전이와 안전장치
+# 생성: python ../../../_design/excalidraw_kit.py state-machine.yaml --out . --export
+name: state-machine
+title: 상태 전이와 안전장치
+subtitle: 승인 없이 applied로 가는 길은 없다 · 검증 실패는 실행 전체를 멈추고 실행 ID로 되돌린다
+layout: grid
+gapX: 80
+gapY: 80
+maxTextWidth: 170
+nodes:
+  - {id: planned, label: "planned\n규칙이 만든 조정안", role: neutral, col: 0, row: 0}
+  - {id: previewed, label: "previewed\n현재 값 재조회", role: info, col: 1, row: 0}
+  - {id: approved, label: "approved\n사람 승인", role: warning, col: 2, row: 0}
+  - {id: applied, label: "applied\nAPI 반영", role: primary, col: 3, row: 0}
+  - {id: verified, label: "verified\n재조회 값 일치", role: success, col: 4, row: 0}
+  - {id: blocked, label: "blocked\n변경 폭·하한/상한\n학습 기간·일일 건수", role: warning, shape: ellipse, col: 1, row: -1}
+  - {id: rejected, label: "rejected\n승인 거절", role: neutral, shape: ellipse, col: 1, row: 1}
+  - {id: failed, label: "failed\n검증 불일치·API 오류", role: danger, col: 3, row: 1}
+  - {id: skipped, label: "skipped\n앞선 실패로 중단", role: neutral, shape: ellipse, col: 3, row: 2}
+  - {id: rolledback, label: "rolled_back\n이전 값 복원·재조회", role: danger, col: 4, row: 1}
+edges:
+  - {from: planned, to: previewed, label: preview}
+  - {from: previewed, to: approved, label: 승인, role: success}
+  - {from: approved, to: applied, label: apply}
+  - {from: applied, to: verified, label: verify, role: success}
+  - {from: previewed, to: blocked, label: 안전장치, role: warning}
+  - {from: previewed, to: rejected, label: 거절}
+  - {from: applied, to: failed, label: 불일치, role: danger}
+  - {from: failed, to: skipped, label: 나머지 중단, role: danger, style: dashed}
+  - {from: verified, to: rolledback, label: rollback, role: danger}
+  - {from: failed, to: rolledback, label: rollback, role: danger}
+zones:
+  - {id: human, label: 사람 승인 구간, nodes: [approved], role: warning}

@@ -1,0 +1,32 @@
+# 시스템 구조: 어댑터 계층 위에 진단·규칙·계획·실행, 옆에 감사 로그와 브리핑
+# 생성: python ../../../_design/excalidraw_kit.py architecture.yaml --out . --export
+name: architecture
+title: 구조 — 엔진은 어댑터 인터페이스만 안다
+subtitle: 플랫폼을 늘릴 때는 어댑터 하나만 추가, 규칙은 YAML에서 수정
+layout: grid
+gapX: 80
+gapY: 90
+maxTextWidth: 190
+nodes:
+  - {id: fake, label: "가짜 광고 API\nJSON 상태 · 실패 시뮬레이션", role: info, col: 1, row: 0}
+  - {id: sa, label: "검색광고형 어댑터\n일예산 · 입찰가", role: info, col: 0, row: 0}
+  - {id: mt, label: "메타형 어댑터\n세트 예산 · 소재 상태", role: info, col: 3, row: 0}
+  - {id: live, label: "실연동 자리\n(서명 방식만 문서화)", role: neutral, col: 2, row: 0, strokeStyle: dashed}
+  - {id: diagnose, label: "diagnose\n소진 시각·노출 손실\n위닝·피로 소재", role: primary, col: 0, row: 1}
+  - {id: rules, label: "rules\nYAML 조건 → 액션\n+ 안전장치 설정", role: primary, col: 1, row: 1}
+  - {id: plan, label: "plan\n조정안 + 근거 문장\n+ 예상 영향", role: primary, col: 2, row: 1}
+  - {id: execute, label: "execute\npreview · approve\napply · verify · rollback", role: success, col: 3, row: 1}
+  - {id: audit, label: "audit (SQLite)\nruns · changes · events", role: neutral, col: 3, row: 2}
+  - {id: brief, label: "brief\nHTML 아침 브리핑", role: secondary, col: 2, row: 2}
+  - {id: cli, label: "cli\nadops demo · plan · approve …", role: secondary, col: 1, row: 2}
+edges:
+  - {from: sa, to: diagnose, label: 조회}
+  - {from: execute, to: mt, label: 반영·재조회}
+  - {from: diagnose, to: rules, label: 지표}
+  - {from: rules, to: plan, label: 매칭}
+  - {from: plan, to: execute, label: 변경안}
+  - {from: execute, to: audit, label: 기록}
+  - {from: audit, to: brief}
+  - {from: brief, to: cli, style: dashed}
+zones:
+  - {id: adapters, label: "adapters — 모두 같은 인터페이스: get_entities · get_stats · get_state · apply_change", nodes: [fake, sa, mt, live], role: info}

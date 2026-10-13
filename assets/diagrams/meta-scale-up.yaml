@@ -1,0 +1,29 @@
+# 메타형 위닝 광고 스케일업 규칙 흐름 (adops/rules/defaults/meta.yaml)
+# 생성: python ../../../_design/excalidraw_kit.py meta-scale-up.yaml --out . --export
+name: meta-scale-up
+title: 메타형 위닝 광고 스케일업
+subtitle: 지표 조건 → 증액·중지 후보 → 학습 기간을 지키는 안전장치 → 사람 승인 (기본 규칙 meta.yaml 기준)
+layout: grid
+gapX: 70
+gapY: 60
+maxTextWidth: 190
+nodes:
+  - {id: collect, label: "소재 단위 일별 실적\n→ 세트 단위로 합산", role: info, col: 0, row: 1}
+  - {id: win, label: "위닝 조건?\nROAS ≥ 350%\n전환 ≥ 20건 · 상위 절반", role: warning, shape: diamond, col: 1, row: 0}
+  - {id: lose, label: "소재 조건?\nCTR -30%↓ & 빈도 3.5↑\n또는 ROAS < 70%", role: warning, shape: diamond, col: 1, row: 2, width: 320}
+  - {id: up, label: "세트 예산\n+20% 후보", role: success, col: 2, row: 0}
+  - {id: pause, label: "소재 중지 후보", role: danger, col: 2, row: 2}
+  - {id: cand, label: "조정안\n근거 문장 자동 생성", role: primary, col: 3, row: 1}
+  - {id: guard, label: "안전장치\n변경 폭 ≤ 20%\n쿨다운 3일 · 하루 6건", role: primary, shape: diamond, col: 4, row: 1}
+  - {id: block, label: "차단\n학습 기간 보호", role: danger, shape: ellipse, col: 4, row: 2}
+  - {id: approve, label: "사람 승인 →\n반영 · 재조회 검증", role: success, col: 5, row: 1}
+edges:
+  - {from: collect, to: win}
+  - {from: collect, to: lose}
+  - {from: win, to: up, label: 예, role: success}
+  - {from: lose, to: pause, label: 예, role: danger}
+  - {from: up, to: cand}
+  - {from: pause, to: cand}
+  - {from: cand, to: guard}
+  - {from: guard, to: block, label: 위반, role: danger}
+  - {from: guard, to: approve, label: 통과, role: success}
