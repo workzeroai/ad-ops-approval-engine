@@ -1,0 +1,11077 @@
+{
+ "meta": {
+  "as_of": "2026-10-12",
+  "seed": 20261013,
+  "days": 28,
+  "note": "가상 데이터: adops.fakedata.generate()가 만든 값이며 실제 광고 계정과 무관합니다.",
+  "brand": "핏루틴 (가상 홈트레이닝 기구 쇼핑몰)"
+ },
+ "accounts": {
+  "sa-fitroutine": {
+   "platform": "searchad_like",
+   "name": "핏루틴 검색광고",
+   "currency": "KRW"
+  },
+  "mt-fitroutine": {
+   "platform": "meta_like",
+   "name": "핏루틴 메타",
+   "currency": "KRW"
+  }
+ },
+ "objects": {
+  "sa-fitroutine": {
+   "campaigns": [
+    {
+     "campaignId": "cmp-brand",
+     "name": "브랜드 검색",
+     "dailyBudget": 50000,
+     "userLock": false,
+     "editTm": "2026-09-13"
+    },
+    {
+     "campaignId": "cmp-homegym",
+     "name": "홈트 기구_일반",
+     "dailyBudget": 130000,
+     "userLock": false,
+     "editTm": "2026-09-13"
+    },
+    {
+     "campaignId": "cmp-yoga",
+     "name": "요가·필라테스 소품",
+     "dailyBudget": 56000,
+     "userLock": false,
+     "editTm": "2026-09-13"
+    }
+   ],
+   "adgroups": [
+    {
+     "adgroupId": "grp-brand",
+     "campaignId": "cmp-brand",
+     "name": "브랜드",
+     "userLock": false
+    },
+    {
+     "adgroupId": "grp-dumbbell",
+     "campaignId": "cmp-homegym",
+     "name": "덤벨·케틀벨",
+     "userLock": false
+    },
+    {
+     "adgroupId": "grp-bike",
+     "campaignId": "cmp-homegym",
+     "name": "실내 자전거",
+     "userLock": false
+    },
+    {
+     "adgroupId": "grp-general",
+     "campaignId": "cmp-homegym",
+     "name": "홈트 일반",
+     "userLock": false
+    },
+    {
+     "adgroupId": "grp-yoga",
+     "campaignId": "cmp-yoga",
+     "name": "요가 소품",
+     "userLock": false
+    },
+    {
+     "adgroupId": "grp-pilates",
+     "campaignId": "cmp-yoga",
+     "name": "필라테스",
+     "userLock": false
+    }
+   ],
+   "keywords": [
+    {
+     "keywordId": "kw-brand",
+     "adgroupId": "grp-brand",
+     "keyword": "핏루틴",
+     "bidAmt": 300,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-brand-dumbbell",
+     "adgroupId": "grp-brand",
+     "keyword": "핏루틴 덤벨",
+     "bidAmt": 250,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-dumbbell",
+     "adgroupId": "grp-dumbbell",
+     "keyword": "가정용 덤벨",
+     "bidAmt": 620,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-kettlebell",
+     "adgroupId": "grp-dumbbell",
+     "keyword": "케틀벨 추천",
+     "bidAmt": 480,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-bike",
+     "adgroupId": "grp-bike",
+     "keyword": "실내 자전거 추천",
+     "bidAmt": 900,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-foldbike",
+     "adgroupId": "grp-bike",
+     "keyword": "접이식 실내자전거",
+     "bidAmt": 1100,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-homegym",
+     "adgroupId": "grp-general",
+     "keyword": "홈트 기구",
+     "bidAmt": 750,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-yogamat",
+     "adgroupId": "grp-yoga",
+     "keyword": "요가매트 두꺼운",
+     "bidAmt": 400,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-foamroller",
+     "adgroupId": "grp-yoga",
+     "keyword": "폼롤러",
+     "bidAmt": 350,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-pilatesring",
+     "adgroupId": "grp-pilates",
+     "keyword": "필라테스 링",
+     "bidAmt": 520,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    },
+    {
+     "keywordId": "kw-pilatestools",
+     "adgroupId": "grp-pilates",
+     "keyword": "필라테스 소도구",
+     "bidAmt": 450,
+     "userLock": false,
+     "editTm": "2026-09-22"
+    }
+   ]
+  },
+  "mt-fitroutine": {
+   "campaigns": [
+    {
+     "id": "cmp-conv",
+     "name": "전환_홈트 기구",
+     "status": "ACTIVE"
+    }
+   ],
+   "adsets": [
+    {
+     "id": "as-interest",
+     "campaign_id": "cmp-conv",
+     "name": "관심사_홈트 입문자",
+     "daily_budget": "100000",
+     "status": "ACTIVE",
+     "updated_time": "2026-09-23"
+    },
+    {
+     "id": "as-lookalike",
+     "campaign_id": "cmp-conv",
+     "name": "유사타겟_구매자 1%",
+     "daily_budget": "120000",
+     "status": "ACTIVE",
+     "updated_time": "2026-10-01"
+    },
+    {
+     "id": "as-retarget",
+     "campaign_id": "cmp-conv",
+     "name": "리타게팅_장바구니 7일",
+     "daily_budget": "60000",
+     "status": "ACTIVE",
+     "updated_time": "2026-10-12"
+    },
+    {
+     "id": "as-broad",
+     "campaign_id": "cmp-conv",
+     "name": "광범위_25-44",
+     "daily_budget": "80000",
+     "status": "ACTIVE",
+     "updated_time": "2026-09-27"
+    }
+   ],
+   "ads": [
+    {
+     "id": "ad-a01",
+     "adset_id": "as-interest",
+     "name": "A-01 덤벨 세트 이미지",
+     "status": "ACTIVE"
+    },
+    {
+     "id": "ad-a02",
+     "adset_id": "as-interest",
+     "name": "A-02 30일 홈트 챌린지 영상",
+     "status": "ACTIVE"
+    },
+    {
+     "id": "ad-b01",
+     "adset_id": "as-lookalike",
+     "name": "B-01 고객 후기 릴스",
+     "status": "ACTIVE"
+    },
+    {
+     "id": "ad-b02",
+     "adset_id": "as-lookalike",
+     "name": "B-02 할인 배너",
+     "status": "ACTIVE"
+    },
+    {
+     "id": "ad-c01",
+     "adset_id": "as-retarget",
+     "name": "C-01 장바구니 리마인드",
+     "status": "ACTIVE"
+    },
+    {
+     "id": "ad-d01",
+     "adset_id": "as-broad",
+     "name": "D-01 브랜드 소개 영상",
+     "status": "ACTIVE"
+    },
+    {
+     "id": "ad-d02",
+     "adset_id": "as-broad",
+     "name": "D-02 제품 나열 카탈로그",
+     "status": "ACTIVE"
+    }
+   ]
+  }
+ },
+ "stats": {
+  "sa-fitroutine": [
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 916,
+    "clkCnt": 77,
+    "spendAmt": 14385,
+    "convCnt": 5,
+    "convAmt": 435054,
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 426,
+    "clkCnt": 29,
+    "spendAmt": 4628,
+    "convCnt": 1,
+    "convAmt": 64585,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1342,
+    "clkCnt": 106,
+    "spendAmt": 19013,
+    "convCnt": 6,
+    "convAmt": 499639,
+    "hourlyImpCnt": [
+     18,
+     12,
+     7,
+     6,
+     6,
+     9,
+     18,
+     35,
+     56,
+     74,
+     86,
+     92,
+     89,
+     83,
+     80,
+     77,
+     74,
+     71,
+     68,
+     74,
+     86,
+     92,
+     80,
+     53
+    ],
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1938,
+    "clkCnt": 59,
+    "spendAmt": 30676,
+    "convCnt": 2,
+    "convAmt": 122077,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1262,
+    "clkCnt": 28,
+    "spendAmt": 11138,
+    "convCnt": 1,
+    "convAmt": 48859,
+    "avgRank": 4.1
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1355,
+    "clkCnt": 40,
+    "spendAmt": 30928,
+    "convCnt": 1,
+    "convAmt": 286574,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 668,
+    "clkCnt": 18,
+    "spendAmt": 16559,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1622,
+    "clkCnt": 36,
+    "spendAmt": 22550,
+    "convCnt": 1,
+    "convAmt": 124504,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 6845,
+    "clkCnt": 181,
+    "spendAmt": 111851,
+    "convCnt": 5,
+    "convAmt": 582014,
+    "hourlyImpCnt": [
+     90,
+     60,
+     38,
+     30,
+     30,
+     45,
+     90,
+     181,
+     286,
+     376,
+     437,
+     467,
+     452,
+     422,
+     407,
+     392,
+     376,
+     361,
+     346,
+     376,
+     437,
+     467,
+     407,
+     271
+    ],
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2178,
+    "clkCnt": 67,
+    "spendAmt": 20978,
+    "convCnt": 3,
+    "convAmt": 90317,
+    "avgRank": 2.1
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1254,
+    "clkCnt": 32,
+    "spendAmt": 9218,
+    "convCnt": 1,
+    "convAmt": 29912,
+    "avgRank": 4.3
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1358,
+    "clkCnt": 38,
+    "spendAmt": 17630,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.9
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 806,
+    "clkCnt": 21,
+    "spendAmt": 8180,
+    "convCnt": 1,
+    "convAmt": 33562,
+    "avgRank": 3.3
+   },
+   {
+    "statDt": "2026-09-15",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5596,
+    "clkCnt": 158,
+    "spendAmt": 56006,
+    "convCnt": 5,
+    "convAmt": 153791,
+    "hourlyImpCnt": [
+     76,
+     51,
+     32,
+     25,
+     25,
+     38,
+     76,
+     152,
+     241,
+     318,
+     368,
+     394,
+     381,
+     356,
+     343,
+     330,
+     318,
+     305,
+     292,
+     318,
+     368,
+     394,
+     343,
+     52
+    ],
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 894,
+    "clkCnt": 75,
+    "spendAmt": 13570,
+    "convCnt": 4,
+    "convAmt": 352983,
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 394,
+    "clkCnt": 29,
+    "spendAmt": 4475,
+    "convCnt": 1,
+    "convAmt": 61703,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1288,
+    "clkCnt": 104,
+    "spendAmt": 18045,
+    "convCnt": 5,
+    "convAmt": 414686,
+    "hourlyImpCnt": [
+     17,
+     11,
+     7,
+     6,
+     6,
+     9,
+     17,
+     34,
+     54,
+     71,
+     82,
+     88,
+     85,
+     79,
+     77,
+     74,
+     71,
+     68,
+     65,
+     71,
+     82,
+     88,
+     77,
+     51
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2063,
+    "clkCnt": 62,
+    "spendAmt": 32450,
+    "convCnt": 2,
+    "convAmt": 112748,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1250,
+    "clkCnt": 30,
+    "spendAmt": 12352,
+    "convCnt": 1,
+    "convAmt": 49391,
+    "avgRank": 4.0
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1503,
+    "clkCnt": 49,
+    "spendAmt": 38706,
+    "convCnt": 1,
+    "convAmt": 307983,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 730,
+    "clkCnt": 18,
+    "spendAmt": 17035,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1560,
+    "clkCnt": 34,
+    "spendAmt": 22378,
+    "convCnt": 1,
+    "convAmt": 131970,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7106,
+    "clkCnt": 193,
+    "spendAmt": 122921,
+    "convCnt": 5,
+    "convAmt": 602092,
+    "hourlyImpCnt": [
+     94,
+     63,
+     39,
+     31,
+     31,
+     47,
+     94,
+     188,
+     297,
+     391,
+     453,
+     485,
+     469,
+     438,
+     422,
+     407,
+     391,
+     375,
+     360,
+     391,
+     453,
+     485,
+     422,
+     281
+    ],
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2466,
+    "clkCnt": 80,
+    "spendAmt": 26763,
+    "convCnt": 4,
+    "convAmt": 137725,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1116,
+    "clkCnt": 26,
+    "spendAmt": 7908,
+    "convCnt": 2,
+    "convAmt": 55377,
+    "avgRank": 4.4
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1221,
+    "clkCnt": 32,
+    "spendAmt": 13761,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 897,
+    "clkCnt": 19,
+    "spendAmt": 7058,
+    "convCnt": 1,
+    "convAmt": 36132,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-16",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5700,
+    "clkCnt": 157,
+    "spendAmt": 55490,
+    "convCnt": 7,
+    "convAmt": 229234,
+    "hourlyImpCnt": [
+     78,
+     52,
+     32,
+     26,
+     26,
+     39,
+     78,
+     156,
+     247,
+     325,
+     376,
+     402,
+     389,
+     363,
+     350,
+     338,
+     325,
+     312,
+     299,
+     325,
+     376,
+     402,
+     350,
+     34
+    ],
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 915,
+    "clkCnt": 84,
+    "spendAmt": 14665,
+    "convCnt": 5,
+    "convAmt": 388282,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 392,
+    "clkCnt": 27,
+    "spendAmt": 4115,
+    "convCnt": 1,
+    "convAmt": 61998,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1307,
+    "clkCnt": 111,
+    "spendAmt": 18780,
+    "convCnt": 6,
+    "convAmt": 450280,
+    "hourlyImpCnt": [
+     17,
+     12,
+     7,
+     6,
+     6,
+     9,
+     17,
+     35,
+     55,
+     72,
+     83,
+     89,
+     86,
+     81,
+     78,
+     75,
+     72,
+     69,
+     66,
+     72,
+     83,
+     89,
+     78,
+     52
+    ],
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2242,
+    "clkCnt": 67,
+    "spendAmt": 34541,
+    "convCnt": 2,
+    "convAmt": 110538,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1236,
+    "clkCnt": 30,
+    "spendAmt": 12092,
+    "convCnt": 2,
+    "convAmt": 97080,
+    "avgRank": 4.4
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1338,
+    "clkCnt": 39,
+    "spendAmt": 28064,
+    "convCnt": 1,
+    "convAmt": 289435,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 754,
+    "clkCnt": 21,
+    "spendAmt": 19441,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1651,
+    "clkCnt": 39,
+    "spendAmt": 24967,
+    "convCnt": 1,
+    "convAmt": 123918,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7221,
+    "clkCnt": 196,
+    "spendAmt": 119105,
+    "convCnt": 6,
+    "convAmt": 620971,
+    "hourlyImpCnt": [
+     95,
+     64,
+     40,
+     32,
+     32,
+     48,
+     95,
+     191,
+     302,
+     397,
+     461,
+     492,
+     477,
+     445,
+     429,
+     413,
+     397,
+     381,
+     365,
+     397,
+     461,
+     492,
+     429,
+     286
+    ],
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2537,
+    "clkCnt": 78,
+    "spendAmt": 25497,
+    "convCnt": 4,
+    "convAmt": 127807,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1152,
+    "clkCnt": 30,
+    "spendAmt": 8592,
+    "convCnt": 2,
+    "convAmt": 51112,
+    "avgRank": 4.3
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1268,
+    "clkCnt": 34,
+    "spendAmt": 14371,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 889,
+    "clkCnt": 20,
+    "spendAmt": 7579,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.6
+   },
+   {
+    "statDt": "2026-09-17",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5846,
+    "clkCnt": 162,
+    "spendAmt": 56039,
+    "convCnt": 6,
+    "convAmt": 178919,
+    "hourlyImpCnt": [
+     77,
+     52,
+     32,
+     26,
+     26,
+     39,
+     77,
+     155,
+     245,
+     323,
+     374,
+     400,
+     387,
+     361,
+     349,
+     336,
+     323,
+     310,
+     297,
+     323,
+     374,
+     400,
+     349,
+     212
+    ],
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 832,
+    "clkCnt": 76,
+    "spendAmt": 13140,
+    "convCnt": 4,
+    "convAmt": 352236,
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 398,
+    "clkCnt": 30,
+    "spendAmt": 4713,
+    "convCnt": 1,
+    "convAmt": 65125,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1230,
+    "clkCnt": 106,
+    "spendAmt": 17853,
+    "convCnt": 5,
+    "convAmt": 417361,
+    "hourlyImpCnt": [
+     16,
+     11,
+     7,
+     5,
+     5,
+     8,
+     16,
+     32,
+     51,
+     68,
+     78,
+     84,
+     81,
+     76,
+     73,
+     70,
+     68,
+     65,
+     62,
+     68,
+     78,
+     84,
+     73,
+     49
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2243,
+    "clkCnt": 66,
+    "spendAmt": 32432,
+    "convCnt": 2,
+    "convAmt": 126358,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1282,
+    "clkCnt": 29,
+    "spendAmt": 12028,
+    "convCnt": 1,
+    "convAmt": 44958,
+    "avgRank": 3.9
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1507,
+    "clkCnt": 45,
+    "spendAmt": 34546,
+    "convCnt": 1,
+    "convAmt": 300505,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 681,
+    "clkCnt": 19,
+    "spendAmt": 17527,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1588,
+    "clkCnt": 38,
+    "spendAmt": 23118,
+    "convCnt": 1,
+    "convAmt": 118834,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7301,
+    "clkCnt": 197,
+    "spendAmt": 119651,
+    "convCnt": 5,
+    "convAmt": 590655,
+    "hourlyImpCnt": [
+     96,
+     64,
+     40,
+     32,
+     32,
+     48,
+     96,
+     193,
+     305,
+     402,
+     466,
+     498,
+     482,
+     450,
+     434,
+     418,
+     402,
+     386,
+     369,
+     402,
+     466,
+     498,
+     434,
+     289
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2293,
+    "clkCnt": 71,
+    "spendAmt": 22507,
+    "convCnt": 3,
+    "convAmt": 95427,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1221,
+    "clkCnt": 29,
+    "spendAmt": 8922,
+    "convCnt": 2,
+    "convAmt": 60401,
+    "avgRank": 4.5
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1291,
+    "clkCnt": 39,
+    "spendAmt": 17886,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.9
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 821,
+    "clkCnt": 19,
+    "spendAmt": 6874,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.3
+   },
+   {
+    "statDt": "2026-09-18",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5626,
+    "clkCnt": 158,
+    "spendAmt": 56189,
+    "convCnt": 5,
+    "convAmt": 155828,
+    "hourlyImpCnt": [
+     76,
+     51,
+     32,
+     25,
+     25,
+     38,
+     76,
+     153,
+     242,
+     319,
+     370,
+     395,
+     382,
+     357,
+     344,
+     331,
+     319,
+     306,
+     293,
+     319,
+     370,
+     395,
+     344,
+     61
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 831,
+    "clkCnt": 80,
+    "spendAmt": 15032,
+    "convCnt": 4,
+    "convAmt": 362905,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 356,
+    "clkCnt": 23,
+    "spendAmt": 3760,
+    "convCnt": 1,
+    "convAmt": 64549,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1187,
+    "clkCnt": 103,
+    "spendAmt": 18792,
+    "convCnt": 5,
+    "convAmt": 427454,
+    "hourlyImpCnt": [
+     16,
+     10,
+     7,
+     5,
+     5,
+     8,
+     16,
+     31,
+     50,
+     65,
+     76,
+     81,
+     78,
+     73,
+     71,
+     68,
+     65,
+     63,
+     60,
+     65,
+     76,
+     81,
+     71,
+     47
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1157,
+    "clkCnt": 38,
+    "spendAmt": 20028,
+    "convCnt": 1,
+    "convAmt": 57357,
+    "avgRank": 2.1
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 643,
+    "clkCnt": 17,
+    "spendAmt": 6943,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.9
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 839,
+    "clkCnt": 25,
+    "spendAmt": 19628,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 388,
+    "clkCnt": 10,
+    "spendAmt": 9838,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 968,
+    "clkCnt": 21,
+    "spendAmt": 13453,
+    "convCnt": 1,
+    "convAmt": 113412,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 3995,
+    "clkCnt": 111,
+    "spendAmt": 69890,
+    "convCnt": 2,
+    "convAmt": 170769,
+    "hourlyImpCnt": [
+     53,
+     35,
+     22,
+     18,
+     18,
+     26,
+     53,
+     105,
+     167,
+     220,
+     255,
+     272,
+     264,
+     246,
+     237,
+     229,
+     220,
+     211,
+     202,
+     220,
+     255,
+     272,
+     237,
+     158
+    ],
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2183,
+    "clkCnt": 64,
+    "spendAmt": 21582,
+    "convCnt": 3,
+    "convAmt": 97991,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1099,
+    "clkCnt": 30,
+    "spendAmt": 9359,
+    "convCnt": 2,
+    "convAmt": 54409,
+    "avgRank": 4.5
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1176,
+    "clkCnt": 32,
+    "spendAmt": 13831,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 795,
+    "clkCnt": 20,
+    "spendAmt": 7455,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.4
+   },
+   {
+    "statDt": "2026-09-19",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5253,
+    "clkCnt": 146,
+    "spendAmt": 52227,
+    "convCnt": 5,
+    "convAmt": 152400,
+    "hourlyImpCnt": [
+     69,
+     46,
+     29,
+     23,
+     23,
+     35,
+     69,
+     139,
+     220,
+     289,
+     335,
+     358,
+     347,
+     324,
+     312,
+     300,
+     289,
+     277,
+     266,
+     289,
+     335,
+     358,
+     312,
+     208
+    ],
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 851,
+    "clkCnt": 81,
+    "spendAmt": 15290,
+    "convCnt": 5,
+    "convAmt": 397843,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 362,
+    "clkCnt": 27,
+    "spendAmt": 4482,
+    "convCnt": 1,
+    "convAmt": 61009,
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1213,
+    "clkCnt": 108,
+    "spendAmt": 19772,
+    "convCnt": 6,
+    "convAmt": 458852,
+    "hourlyImpCnt": [
+     16,
+     11,
+     7,
+     5,
+     5,
+     8,
+     16,
+     32,
+     51,
+     67,
+     77,
+     83,
+     80,
+     75,
+     72,
+     69,
+     67,
+     64,
+     61,
+     67,
+     77,
+     83,
+     72,
+     48
+    ],
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1137,
+    "clkCnt": 37,
+    "spendAmt": 18205,
+    "convCnt": 1,
+    "convAmt": 58955,
+    "avgRank": 1.9
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 709,
+    "clkCnt": 18,
+    "spendAmt": 7480,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 4.2
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 902,
+    "clkCnt": 30,
+    "spendAmt": 21975,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 419,
+    "clkCnt": 11,
+    "spendAmt": 10771,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 957,
+    "clkCnt": 19,
+    "spendAmt": 12227,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 4124,
+    "clkCnt": 115,
+    "spendAmt": 70658,
+    "convCnt": 1,
+    "convAmt": 58955,
+    "hourlyImpCnt": [
+     54,
+     36,
+     23,
+     18,
+     18,
+     27,
+     54,
+     109,
+     172,
+     227,
+     263,
+     281,
+     272,
+     254,
+     245,
+     236,
+     227,
+     218,
+     209,
+     227,
+     263,
+     281,
+     245,
+     163
+    ],
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2171,
+    "clkCnt": 65,
+    "spendAmt": 20695,
+    "convCnt": 3,
+    "convAmt": 101333,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1014,
+    "clkCnt": 26,
+    "spendAmt": 8099,
+    "convCnt": 2,
+    "convAmt": 52730,
+    "avgRank": 4.7
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1093,
+    "clkCnt": 28,
+    "spendAmt": 12567,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.3
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 809,
+    "clkCnt": 20,
+    "spendAmt": 7552,
+    "convCnt": 1,
+    "convAmt": 34028,
+    "avgRank": 3.5
+   },
+   {
+    "statDt": "2026-09-20",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5087,
+    "clkCnt": 139,
+    "spendAmt": 48913,
+    "convCnt": 6,
+    "convAmt": 188091,
+    "hourlyImpCnt": [
+     67,
+     45,
+     28,
+     22,
+     22,
+     34,
+     67,
+     134,
+     213,
+     280,
+     325,
+     347,
+     336,
+     313,
+     302,
+     291,
+     280,
+     269,
+     257,
+     280,
+     325,
+     347,
+     302,
+     201
+    ],
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 923,
+    "clkCnt": 82,
+    "spendAmt": 14511,
+    "convCnt": 5,
+    "convAmt": 437774,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 401,
+    "clkCnt": 31,
+    "spendAmt": 5150,
+    "convCnt": 2,
+    "convAmt": 120674,
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1324,
+    "clkCnt": 113,
+    "spendAmt": 19661,
+    "convCnt": 7,
+    "convAmt": 558448,
+    "hourlyImpCnt": [
+     17,
+     12,
+     7,
+     6,
+     6,
+     9,
+     17,
+     35,
+     55,
+     73,
+     84,
+     90,
+     87,
+     82,
+     79,
+     76,
+     73,
+     70,
+     67,
+     73,
+     84,
+     90,
+     79,
+     52
+    ],
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1932,
+    "clkCnt": 68,
+    "spendAmt": 36065,
+    "convCnt": 3,
+    "convAmt": 186416,
+    "avgRank": 1.8
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1288,
+    "clkCnt": 29,
+    "spendAmt": 11349,
+    "convCnt": 1,
+    "convAmt": 44567,
+    "avgRank": 4.4
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1479,
+    "clkCnt": 48,
+    "spendAmt": 35151,
+    "convCnt": 1,
+    "convAmt": 271556,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 717,
+    "clkCnt": 18,
+    "spendAmt": 17014,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1639,
+    "clkCnt": 39,
+    "spendAmt": 24920,
+    "convCnt": 1,
+    "convAmt": 119996,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7055,
+    "clkCnt": 202,
+    "spendAmt": 124499,
+    "convCnt": 6,
+    "convAmt": 622535,
+    "hourlyImpCnt": [
+     93,
+     62,
+     39,
+     31,
+     31,
+     47,
+     93,
+     186,
+     295,
+     388,
+     450,
+     481,
+     466,
+     435,
+     419,
+     404,
+     388,
+     373,
+     357,
+     388,
+     450,
+     481,
+     419,
+     279
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2336,
+    "clkCnt": 68,
+    "spendAmt": 21260,
+    "convCnt": 4,
+    "convAmt": 139647,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1287,
+    "clkCnt": 32,
+    "spendAmt": 9879,
+    "convCnt": 2,
+    "convAmt": 60049,
+    "avgRank": 4.6
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1359,
+    "clkCnt": 37,
+    "spendAmt": 16131,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.9
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 920,
+    "clkCnt": 24,
+    "spendAmt": 8660,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-21",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5902,
+    "clkCnt": 161,
+    "spendAmt": 55930,
+    "convCnt": 6,
+    "convAmt": 199696,
+    "hourlyImpCnt": [
+     78,
+     52,
+     32,
+     26,
+     26,
+     39,
+     78,
+     156,
+     247,
+     325,
+     377,
+     403,
+     390,
+     364,
+     351,
+     338,
+     325,
+     312,
+     299,
+     325,
+     377,
+     403,
+     351,
+     234
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 886,
+    "clkCnt": 78,
+    "spendAmt": 13495,
+    "convCnt": 4,
+    "convAmt": 362090,
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 379,
+    "clkCnt": 24,
+    "spendAmt": 4027,
+    "convCnt": 2,
+    "convAmt": 116311,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1265,
+    "clkCnt": 102,
+    "spendAmt": 17522,
+    "convCnt": 6,
+    "convAmt": 478401,
+    "hourlyImpCnt": [
+     17,
+     11,
+     7,
+     6,
+     6,
+     8,
+     17,
+     33,
+     53,
+     70,
+     81,
+     86,
+     83,
+     78,
+     75,
+     72,
+     70,
+     67,
+     64,
+     70,
+     81,
+     86,
+     75,
+     50
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2241,
+    "clkCnt": 75,
+    "spendAmt": 39578,
+    "convCnt": 3,
+    "convAmt": 185698,
+    "avgRank": 2.0
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1234,
+    "clkCnt": 29,
+    "spendAmt": 11851,
+    "convCnt": 1,
+    "convAmt": 46050,
+    "avgRank": 3.9
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1385,
+    "clkCnt": 45,
+    "spendAmt": 35011,
+    "convCnt": 1,
+    "convAmt": 286236,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 725,
+    "clkCnt": 19,
+    "spendAmt": 17690,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1506,
+    "clkCnt": 35,
+    "spendAmt": 22218,
+    "convCnt": 1,
+    "convAmt": 129458,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7091,
+    "clkCnt": 203,
+    "spendAmt": 126348,
+    "convCnt": 6,
+    "convAmt": 647442,
+    "hourlyImpCnt": [
+     94,
+     62,
+     39,
+     31,
+     31,
+     47,
+     94,
+     187,
+     296,
+     390,
+     452,
+     484,
+     468,
+     437,
+     421,
+     406,
+     390,
+     374,
+     359,
+     390,
+     452,
+     484,
+     421,
+     281
+    ],
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2402,
+    "clkCnt": 75,
+    "spendAmt": 25794,
+    "convCnt": 3,
+    "convAmt": 89298,
+    "avgRank": 2.0
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1197,
+    "clkCnt": 29,
+    "spendAmt": 8441,
+    "convCnt": 2,
+    "convAmt": 51203,
+    "avgRank": 4.5
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1230,
+    "clkCnt": 33,
+    "spendAmt": 14495,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 826,
+    "clkCnt": 19,
+    "spendAmt": 7138,
+    "convCnt": 1,
+    "convAmt": 34945,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-22",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5655,
+    "clkCnt": 156,
+    "spendAmt": 55868,
+    "convCnt": 6,
+    "convAmt": 175446,
+    "hourlyImpCnt": [
+     75,
+     50,
+     31,
+     25,
+     25,
+     38,
+     75,
+     151,
+     239,
+     315,
+     365,
+     390,
+     377,
+     352,
+     340,
+     327,
+     315,
+     302,
+     289,
+     315,
+     365,
+     390,
+     340,
+     163
+    ],
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 887,
+    "clkCnt": 78,
+    "spendAmt": 13521,
+    "convCnt": 5,
+    "convAmt": 440591,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 428,
+    "clkCnt": 28,
+    "spendAmt": 4695,
+    "convCnt": 1,
+    "convAmt": 55886,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1315,
+    "clkCnt": 106,
+    "spendAmt": 18216,
+    "convCnt": 6,
+    "convAmt": 496477,
+    "hourlyImpCnt": [
+     17,
+     12,
+     7,
+     6,
+     6,
+     9,
+     17,
+     35,
+     55,
+     72,
+     84,
+     90,
+     87,
+     81,
+     78,
+     75,
+     72,
+     69,
+     67,
+     72,
+     84,
+     90,
+     78,
+     52
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2044,
+    "clkCnt": 64,
+    "spendAmt": 31316,
+    "convCnt": 2,
+    "convAmt": 116633,
+    "avgRank": 2.0
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1247,
+    "clkCnt": 32,
+    "spendAmt": 12981,
+    "convCnt": 1,
+    "convAmt": 47450,
+    "avgRank": 4.2
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1369,
+    "clkCnt": 41,
+    "spendAmt": 32406,
+    "convCnt": 1,
+    "convAmt": 316412,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 666,
+    "clkCnt": 18,
+    "spendAmt": 16300,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1474,
+    "clkCnt": 32,
+    "spendAmt": 20297,
+    "convCnt": 1,
+    "convAmt": 130888,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 6800,
+    "clkCnt": 187,
+    "spendAmt": 113300,
+    "convCnt": 5,
+    "convAmt": 611383,
+    "hourlyImpCnt": [
+     90,
+     60,
+     37,
+     30,
+     30,
+     45,
+     90,
+     180,
+     284,
+     374,
+     434,
+     464,
+     449,
+     419,
+     404,
+     389,
+     374,
+     359,
+     344,
+     374,
+     434,
+     464,
+     404,
+     269
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2346,
+    "clkCnt": 65,
+    "spendAmt": 22217,
+    "convCnt": 3,
+    "convAmt": 94323,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1127,
+    "clkCnt": 27,
+    "spendAmt": 7805,
+    "convCnt": 2,
+    "convAmt": 54677,
+    "avgRank": 4.7
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1344,
+    "clkCnt": 36,
+    "spendAmt": 16580,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 828,
+    "clkCnt": 21,
+    "spendAmt": 7869,
+    "convCnt": 1,
+    "convAmt": 32394,
+    "avgRank": 3.3
+   },
+   {
+    "statDt": "2026-09-23",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5645,
+    "clkCnt": 149,
+    "spendAmt": 54471,
+    "convCnt": 6,
+    "convAmt": 181394,
+    "hourlyImpCnt": [
+     75,
+     50,
+     31,
+     25,
+     25,
+     37,
+     75,
+     149,
+     236,
+     311,
+     360,
+     385,
+     373,
+     348,
+     335,
+     323,
+     311,
+     298,
+     286,
+     311,
+     360,
+     385,
+     335,
+     224
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 859,
+    "clkCnt": 76,
+    "spendAmt": 14288,
+    "convCnt": 4,
+    "convAmt": 363626,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 406,
+    "clkCnt": 27,
+    "spendAmt": 4139,
+    "convCnt": 2,
+    "convAmt": 125125,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1265,
+    "clkCnt": 103,
+    "spendAmt": 18427,
+    "convCnt": 6,
+    "convAmt": 488751,
+    "hourlyImpCnt": [
+     17,
+     11,
+     7,
+     6,
+     6,
+     8,
+     17,
+     33,
+     53,
+     70,
+     81,
+     86,
+     83,
+     78,
+     75,
+     72,
+     70,
+     67,
+     64,
+     70,
+     81,
+     86,
+     75,
+     50
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2035,
+    "clkCnt": 70,
+    "spendAmt": 36993,
+    "convCnt": 3,
+    "convAmt": 186094,
+    "avgRank": 2.0
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1117,
+    "clkCnt": 27,
+    "spendAmt": 10595,
+    "convCnt": 1,
+    "convAmt": 43412,
+    "avgRank": 4.0
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1526,
+    "clkCnt": 44,
+    "spendAmt": 31720,
+    "convCnt": 1,
+    "convAmt": 277561,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 681,
+    "clkCnt": 19,
+    "spendAmt": 17367,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1599,
+    "clkCnt": 39,
+    "spendAmt": 23648,
+    "convCnt": 1,
+    "convAmt": 121305,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 6958,
+    "clkCnt": 199,
+    "spendAmt": 120323,
+    "convCnt": 6,
+    "convAmt": 628372,
+    "hourlyImpCnt": [
+     92,
+     61,
+     38,
+     31,
+     31,
+     46,
+     92,
+     184,
+     291,
+     383,
+     444,
+     475,
+     459,
+     429,
+     413,
+     398,
+     383,
+     367,
+     352,
+     383,
+     444,
+     475,
+     413,
+     276
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2255,
+    "clkCnt": 69,
+    "spendAmt": 22516,
+    "convCnt": 4,
+    "convAmt": 126436,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1156,
+    "clkCnt": 31,
+    "spendAmt": 9357,
+    "convCnt": 1,
+    "convAmt": 25550,
+    "avgRank": 4.6
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1350,
+    "clkCnt": 37,
+    "spendAmt": 16980,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.3
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 880,
+    "clkCnt": 20,
+    "spendAmt": 7275,
+    "convCnt": 1,
+    "convAmt": 37804,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-24",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5641,
+    "clkCnt": 157,
+    "spendAmt": 56128,
+    "convCnt": 6,
+    "convAmt": 189790,
+    "hourlyImpCnt": [
+     76,
+     51,
+     32,
+     25,
+     25,
+     38,
+     76,
+     152,
+     241,
+     317,
+     368,
+     393,
+     381,
+     355,
+     343,
+     330,
+     317,
+     305,
+     292,
+     317,
+     368,
+     393,
+     343,
+     101
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 970,
+    "clkCnt": 90,
+    "spendAmt": 15701,
+    "convCnt": 6,
+    "convAmt": 498379,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 411,
+    "clkCnt": 27,
+    "spendAmt": 4171,
+    "convCnt": 1,
+    "convAmt": 55611,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1381,
+    "clkCnt": 117,
+    "spendAmt": 19872,
+    "convCnt": 7,
+    "convAmt": 553990,
+    "hourlyImpCnt": [
+     18,
+     12,
+     8,
+     6,
+     6,
+     9,
+     18,
+     36,
+     58,
+     76,
+     88,
+     94,
+     91,
+     85,
+     82,
+     79,
+     76,
+     73,
+     70,
+     76,
+     88,
+     94,
+     82,
+     55
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1970,
+    "clkCnt": 63,
+    "spendAmt": 32243,
+    "convCnt": 2,
+    "convAmt": 129372,
+    "avgRank": 2.1
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1128,
+    "clkCnt": 29,
+    "spendAmt": 12333,
+    "convCnt": 1,
+    "convAmt": 41138,
+    "avgRank": 3.8
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1464,
+    "clkCnt": 42,
+    "spendAmt": 30395,
+    "convCnt": 1,
+    "convAmt": 276870,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 698,
+    "clkCnt": 17,
+    "spendAmt": 16220,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1718,
+    "clkCnt": 40,
+    "spendAmt": 24611,
+    "convCnt": 1,
+    "convAmt": 117492,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 6978,
+    "clkCnt": 191,
+    "spendAmt": 115802,
+    "convCnt": 5,
+    "convAmt": 564872,
+    "hourlyImpCnt": [
+     92,
+     61,
+     38,
+     31,
+     31,
+     46,
+     92,
+     184,
+     292,
+     384,
+     445,
+     476,
+     461,
+     430,
+     415,
+     399,
+     384,
+     368,
+     353,
+     384,
+     445,
+     476,
+     415,
+     276
+    ],
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2434,
+    "clkCnt": 66,
+    "spendAmt": 21588,
+    "convCnt": 4,
+    "convAmt": 138236,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1240,
+    "clkCnt": 30,
+    "spendAmt": 8863,
+    "convCnt": 1,
+    "convAmt": 29741,
+    "avgRank": 4.7
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1308,
+    "clkCnt": 38,
+    "spendAmt": 16749,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 919,
+    "clkCnt": 24,
+    "spendAmt": 8742,
+    "convCnt": 1,
+    "convAmt": 32064,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-25",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5901,
+    "clkCnt": 158,
+    "spendAmt": 55942,
+    "convCnt": 6,
+    "convAmt": 200041,
+    "hourlyImpCnt": [
+     79,
+     53,
+     33,
+     26,
+     26,
+     40,
+     79,
+     158,
+     251,
+     330,
+     383,
+     409,
+     396,
+     370,
+     357,
+     343,
+     330,
+     317,
+     304,
+     330,
+     383,
+     409,
+     357,
+     137
+    ],
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 805,
+    "clkCnt": 68,
+    "spendAmt": 12170,
+    "convCnt": 4,
+    "convAmt": 310844,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 347,
+    "clkCnt": 26,
+    "spendAmt": 4231,
+    "convCnt": 1,
+    "convAmt": 59227,
+    "avgRank": 1.4
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1152,
+    "clkCnt": 94,
+    "spendAmt": 16401,
+    "convCnt": 5,
+    "convAmt": 370071,
+    "hourlyImpCnt": [
+     15,
+     10,
+     6,
+     5,
+     5,
+     8,
+     15,
+     30,
+     48,
+     63,
+     73,
+     79,
+     76,
+     71,
+     68,
+     66,
+     63,
+     61,
+     58,
+     63,
+     73,
+     79,
+     68,
+     46
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1281,
+    "clkCnt": 44,
+    "spendAmt": 22392,
+    "convCnt": 2,
+    "convAmt": 113578,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 702,
+    "clkCnt": 18,
+    "spendAmt": 7121,
+    "convCnt": 1,
+    "convAmt": 49256,
+    "avgRank": 4.1
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 879,
+    "clkCnt": 25,
+    "spendAmt": 19139,
+    "convCnt": 1,
+    "convAmt": 265540,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 426,
+    "clkCnt": 11,
+    "spendAmt": 10284,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 981,
+    "clkCnt": 21,
+    "spendAmt": 13723,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 4269,
+    "clkCnt": 119,
+    "spendAmt": 72659,
+    "convCnt": 4,
+    "convAmt": 428374,
+    "hourlyImpCnt": [
+     56,
+     38,
+     23,
+     19,
+     19,
+     28,
+     56,
+     113,
+     178,
+     235,
+     272,
+     291,
+     282,
+     263,
+     254,
+     244,
+     235,
+     225,
+     216,
+     235,
+     272,
+     291,
+     254,
+     169
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2170,
+    "clkCnt": 59,
+    "spendAmt": 19652,
+    "convCnt": 3,
+    "convAmt": 97103,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 948,
+    "clkCnt": 24,
+    "spendAmt": 7517,
+    "convCnt": 1,
+    "convAmt": 27529,
+    "avgRank": 4.3
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1153,
+    "clkCnt": 35,
+    "spendAmt": 15559,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 718,
+    "clkCnt": 16,
+    "spendAmt": 5952,
+    "convCnt": 1,
+    "convAmt": 31807,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-26",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 4989,
+    "clkCnt": 134,
+    "spendAmt": 48680,
+    "convCnt": 5,
+    "convAmt": 156439,
+    "hourlyImpCnt": [
+     66,
+     44,
+     27,
+     22,
+     22,
+     33,
+     66,
+     132,
+     209,
+     274,
+     318,
+     340,
+     329,
+     307,
+     296,
+     285,
+     274,
+     263,
+     252,
+     274,
+     318,
+     340,
+     296,
+     198
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 856,
+    "clkCnt": 84,
+    "spendAmt": 14536,
+    "convCnt": 5,
+    "convAmt": 399975,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 378,
+    "clkCnt": 28,
+    "spendAmt": 4572,
+    "convCnt": 1,
+    "convAmt": 58605,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1234,
+    "clkCnt": 112,
+    "spendAmt": 19108,
+    "convCnt": 6,
+    "convAmt": 458580,
+    "hourlyImpCnt": [
+     16,
+     11,
+     7,
+     5,
+     5,
+     8,
+     16,
+     33,
+     52,
+     68,
+     79,
+     84,
+     81,
+     76,
+     73,
+     71,
+     68,
+     65,
+     62,
+     68,
+     79,
+     84,
+     73,
+     49
+    ],
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1254,
+    "clkCnt": 38,
+    "spendAmt": 19074,
+    "convCnt": 2,
+    "convAmt": 106900,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 693,
+    "clkCnt": 17,
+    "spendAmt": 7049,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 4.0
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 830,
+    "clkCnt": 27,
+    "spendAmt": 21277,
+    "convCnt": 1,
+    "convAmt": 273353,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 441,
+    "clkCnt": 11,
+    "spendAmt": 10064,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 969,
+    "clkCnt": 21,
+    "spendAmt": 13818,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 4187,
+    "clkCnt": 114,
+    "spendAmt": 71282,
+    "convCnt": 3,
+    "convAmt": 380253,
+    "hourlyImpCnt": [
+     55,
+     37,
+     23,
+     18,
+     18,
+     28,
+     55,
+     111,
+     175,
+     230,
+     267,
+     286,
+     276,
+     258,
+     249,
+     240,
+     230,
+     221,
+     212,
+     230,
+     267,
+     286,
+     249,
+     166
+    ],
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 1935,
+    "clkCnt": 56,
+    "spendAmt": 17696,
+    "convCnt": 3,
+    "convAmt": 102324,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1081,
+    "clkCnt": 27,
+    "spendAmt": 8176,
+    "convCnt": 2,
+    "convAmt": 52368,
+    "avgRank": 4.7
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1084,
+    "clkCnt": 31,
+    "spendAmt": 13610,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 788,
+    "clkCnt": 17,
+    "spendAmt": 6698,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.3
+   },
+   {
+    "statDt": "2026-09-27",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 4888,
+    "clkCnt": 131,
+    "spendAmt": 46180,
+    "convCnt": 5,
+    "convAmt": 154692,
+    "hourlyImpCnt": [
+     65,
+     43,
+     27,
+     22,
+     22,
+     32,
+     65,
+     129,
+     204,
+     269,
+     312,
+     333,
+     323,
+     301,
+     290,
+     280,
+     269,
+     258,
+     247,
+     269,
+     312,
+     333,
+     290,
+     194
+    ],
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 917,
+    "clkCnt": 77,
+    "spendAmt": 14385,
+    "convCnt": 5,
+    "convAmt": 425600,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 422,
+    "clkCnt": 32,
+    "spendAmt": 5182,
+    "convCnt": 2,
+    "convAmt": 110565,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1339,
+    "clkCnt": 109,
+    "spendAmt": 19567,
+    "convCnt": 7,
+    "convAmt": 536165,
+    "hourlyImpCnt": [
+     18,
+     12,
+     7,
+     6,
+     6,
+     9,
+     18,
+     35,
+     56,
+     74,
+     85,
+     91,
+     88,
+     82,
+     80,
+     77,
+     74,
+     71,
+     68,
+     74,
+     85,
+     91,
+     80,
+     53
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1955,
+    "clkCnt": 57,
+    "spendAmt": 27809,
+    "convCnt": 2,
+    "convAmt": 114481,
+    "avgRank": 2.0
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1213,
+    "clkCnt": 27,
+    "spendAmt": 10669,
+    "convCnt": 1,
+    "convAmt": 46112,
+    "avgRank": 3.9
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1433,
+    "clkCnt": 43,
+    "spendAmt": 32090,
+    "convCnt": 1,
+    "convAmt": 311693,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 755,
+    "clkCnt": 19,
+    "spendAmt": 17470,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1578,
+    "clkCnt": 34,
+    "spendAmt": 22353,
+    "convCnt": 1,
+    "convAmt": 108429,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 6934,
+    "clkCnt": 180,
+    "spendAmt": 110391,
+    "convCnt": 5,
+    "convAmt": 580715,
+    "hourlyImpCnt": [
+     92,
+     61,
+     38,
+     31,
+     31,
+     46,
+     92,
+     183,
+     290,
+     381,
+     442,
+     473,
+     458,
+     427,
+     412,
+     397,
+     381,
+     366,
+     351,
+     381,
+     442,
+     473,
+     412,
+     275
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2520,
+    "clkCnt": 70,
+    "spendAmt": 24053,
+    "convCnt": 3,
+    "convAmt": 104384,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1205,
+    "clkCnt": 29,
+    "spendAmt": 8616,
+    "convCnt": 1,
+    "convAmt": 28708,
+    "avgRank": 4.8
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1268,
+    "clkCnt": 33,
+    "spendAmt": 15274,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 961,
+    "clkCnt": 21,
+    "spendAmt": 8234,
+    "convCnt": 1,
+    "convAmt": 34019,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-28",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5954,
+    "clkCnt": 153,
+    "spendAmt": 56177,
+    "convCnt": 5,
+    "convAmt": 167111,
+    "hourlyImpCnt": [
+     79,
+     53,
+     33,
+     26,
+     26,
+     39,
+     79,
+     158,
+     250,
+     329,
+     382,
+     408,
+     395,
+     369,
+     355,
+     342,
+     329,
+     316,
+     303,
+     329,
+     382,
+     408,
+     355,
+     207
+    ],
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 856,
+    "clkCnt": 82,
+    "spendAmt": 14175,
+    "convCnt": 5,
+    "convAmt": 414047,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 394,
+    "clkCnt": 28,
+    "spendAmt": 4470,
+    "convCnt": 2,
+    "convAmt": 110850,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1250,
+    "clkCnt": 110,
+    "spendAmt": 18645,
+    "convCnt": 7,
+    "convAmt": 524897,
+    "hourlyImpCnt": [
+     16,
+     11,
+     7,
+     5,
+     5,
+     8,
+     16,
+     33,
+     52,
+     69,
+     80,
+     85,
+     82,
+     77,
+     74,
+     71,
+     69,
+     66,
+     63,
+     69,
+     80,
+     85,
+     74,
+     49
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2287,
+    "clkCnt": 80,
+    "spendAmt": 39026,
+    "convCnt": 3,
+    "convAmt": 166690,
+    "avgRank": 2.0
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1237,
+    "clkCnt": 32,
+    "spendAmt": 12995,
+    "convCnt": 2,
+    "convAmt": 98936,
+    "avgRank": 3.8
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1610,
+    "clkCnt": 53,
+    "spendAmt": 39893,
+    "convCnt": 1,
+    "convAmt": 278587,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 726,
+    "clkCnt": 17,
+    "spendAmt": 16239,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1669,
+    "clkCnt": 34,
+    "spendAmt": 21712,
+    "convCnt": 1,
+    "convAmt": 109119,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7529,
+    "clkCnt": 216,
+    "spendAmt": 129865,
+    "convCnt": 7,
+    "convAmt": 653332,
+    "hourlyImpCnt": [
+     101,
+     68,
+     42,
+     34,
+     34,
+     51,
+     101,
+     203,
+     321,
+     423,
+     491,
+     524,
+     507,
+     474,
+     457,
+     440,
+     423,
+     406,
+     389,
+     423,
+     491,
+     524,
+     457,
+     146
+    ],
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2091,
+    "clkCnt": 65,
+    "spendAmt": 22047,
+    "convCnt": 4,
+    "convAmt": 115388,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1211,
+    "clkCnt": 32,
+    "spendAmt": 9259,
+    "convCnt": 1,
+    "convAmt": 30122,
+    "avgRank": 4.4
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1305,
+    "clkCnt": 37,
+    "spendAmt": 16854,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 833,
+    "clkCnt": 21,
+    "spendAmt": 7752,
+    "convCnt": 1,
+    "convAmt": 35672,
+    "avgRank": 3.4
+   },
+   {
+    "statDt": "2026-09-29",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5440,
+    "clkCnt": 155,
+    "spendAmt": 55912,
+    "convCnt": 6,
+    "convAmt": 181182,
+    "hourlyImpCnt": [
+     77,
+     51,
+     32,
+     26,
+     26,
+     38,
+     77,
+     154,
+     243,
+     320,
+     372,
+     397,
+     384,
+     359,
+     346,
+     333,
+     320,
+     308,
+     295,
+     320,
+     372,
+     397,
+     193,
+     0
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 936,
+    "clkCnt": 86,
+    "spendAmt": 15407,
+    "convCnt": 5,
+    "convAmt": 389099,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 423,
+    "clkCnt": 31,
+    "spendAmt": 5184,
+    "convCnt": 2,
+    "convAmt": 122511,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1359,
+    "clkCnt": 117,
+    "spendAmt": 20591,
+    "convCnt": 7,
+    "convAmt": 511610,
+    "hourlyImpCnt": [
+     18,
+     12,
+     7,
+     6,
+     6,
+     9,
+     18,
+     36,
+     57,
+     75,
+     87,
+     93,
+     90,
+     84,
+     81,
+     78,
+     75,
+     72,
+     69,
+     75,
+     87,
+     93,
+     81,
+     54
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2456,
+    "clkCnt": 71,
+    "spendAmt": 34984,
+    "convCnt": 2,
+    "convAmt": 123858,
+    "avgRank": 1.9
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1391,
+    "clkCnt": 30,
+    "spendAmt": 12506,
+    "convCnt": 1,
+    "convAmt": 48610,
+    "avgRank": 4.3
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1632,
+    "clkCnt": 50,
+    "spendAmt": 37870,
+    "convCnt": 2,
+    "convAmt": 530590,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 834,
+    "clkCnt": 20,
+    "spendAmt": 19533,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1955,
+    "clkCnt": 41,
+    "spendAmt": 24916,
+    "convCnt": 1,
+    "convAmt": 112591,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 8268,
+    "clkCnt": 212,
+    "spendAmt": 129809,
+    "convCnt": 6,
+    "convAmt": 815649,
+    "hourlyImpCnt": [
+     111,
+     74,
+     46,
+     37,
+     37,
+     55,
+     111,
+     222,
+     351,
+     462,
+     536,
+     573,
+     555,
+     518,
+     499,
+     481,
+     462,
+     444,
+     425,
+     462,
+     536,
+     573,
+     499,
+     198
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2431,
+    "clkCnt": 70,
+    "spendAmt": 23072,
+    "convCnt": 3,
+    "convAmt": 101680,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1249,
+    "clkCnt": 31,
+    "spendAmt": 9033,
+    "convCnt": 2,
+    "convAmt": 55605,
+    "avgRank": 4.6
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1342,
+    "clkCnt": 38,
+    "spendAmt": 16281,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 872,
+    "clkCnt": 20,
+    "spendAmt": 7722,
+    "convCnt": 1,
+    "convAmt": 38115,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-09-30",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5894,
+    "clkCnt": 159,
+    "spendAmt": 56108,
+    "convCnt": 6,
+    "convAmt": 195400,
+    "hourlyImpCnt": [
+     79,
+     52,
+     33,
+     26,
+     26,
+     39,
+     79,
+     157,
+     249,
+     328,
+     380,
+     406,
+     393,
+     367,
+     354,
+     341,
+     328,
+     315,
+     302,
+     328,
+     380,
+     406,
+     354,
+     173
+    ],
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 938,
+    "clkCnt": 81,
+    "spendAmt": 15291,
+    "convCnt": 5,
+    "convAmt": 431319,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 420,
+    "clkCnt": 27,
+    "spendAmt": 4340,
+    "convCnt": 1,
+    "convAmt": 57992,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1358,
+    "clkCnt": 108,
+    "spendAmt": 19631,
+    "convCnt": 6,
+    "convAmt": 489311,
+    "hourlyImpCnt": [
+     18,
+     12,
+     7,
+     6,
+     6,
+     9,
+     18,
+     36,
+     57,
+     75,
+     87,
+     93,
+     90,
+     84,
+     81,
+     78,
+     75,
+     72,
+     69,
+     75,
+     87,
+     93,
+     81,
+     54
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2525,
+    "clkCnt": 84,
+    "spendAmt": 41996,
+    "convCnt": 3,
+    "convAmt": 160166,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1299,
+    "clkCnt": 29,
+    "spendAmt": 11653,
+    "convCnt": 1,
+    "convAmt": 48551,
+    "avgRank": 4.1
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1694,
+    "clkCnt": 51,
+    "spendAmt": 37289,
+    "convCnt": 1,
+    "convAmt": 287649,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 797,
+    "clkCnt": 19,
+    "spendAmt": 17797,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1674,
+    "clkCnt": 33,
+    "spendAmt": 21174,
+    "convCnt": 1,
+    "convAmt": 119077,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7989,
+    "clkCnt": 216,
+    "spendAmt": 129909,
+    "convCnt": 6,
+    "convAmt": 615443,
+    "hourlyImpCnt": [
+     121,
+     81,
+     50,
+     40,
+     40,
+     61,
+     121,
+     242,
+     383,
+     504,
+     585,
+     625,
+     605,
+     565,
+     545,
+     525,
+     504,
+     484,
+     464,
+     504,
+     585,
+     353,
+     0,
+     0
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2300,
+    "clkCnt": 74,
+    "spendAmt": 24840,
+    "convCnt": 4,
+    "convAmt": 117153,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1174,
+    "clkCnt": 30,
+    "spendAmt": 9380,
+    "convCnt": 2,
+    "convAmt": 52837,
+    "avgRank": 4.6
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1153,
+    "clkCnt": 31,
+    "spendAmt": 13392,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 859,
+    "clkCnt": 22,
+    "spendAmt": 8585,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.5
+   },
+   {
+    "statDt": "2026-10-01",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5486,
+    "clkCnt": 157,
+    "spendAmt": 56197,
+    "convCnt": 6,
+    "convAmt": 169990,
+    "hourlyImpCnt": [
+     81,
+     54,
+     34,
+     27,
+     27,
+     40,
+     81,
+     161,
+     255,
+     336,
+     390,
+     416,
+     403,
+     376,
+     363,
+     349,
+     336,
+     322,
+     309,
+     336,
+     390,
+     402,
+     0,
+     0
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 990,
+    "clkCnt": 90,
+    "spendAmt": 16227,
+    "convCnt": 5,
+    "convAmt": 456034,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 420,
+    "clkCnt": 30,
+    "spendAmt": 4702,
+    "convCnt": 1,
+    "convAmt": 58876,
+    "avgRank": 1.4
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1410,
+    "clkCnt": 120,
+    "spendAmt": 20929,
+    "convCnt": 6,
+    "convAmt": 514910,
+    "hourlyImpCnt": [
+     19,
+     12,
+     8,
+     6,
+     6,
+     9,
+     19,
+     37,
+     59,
+     78,
+     90,
+     96,
+     93,
+     87,
+     84,
+     81,
+     78,
+     75,
+     71,
+     78,
+     90,
+     96,
+     84,
+     56
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2181,
+    "clkCnt": 75,
+    "spendAmt": 38209,
+    "convCnt": 3,
+    "convAmt": 185136,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1217,
+    "clkCnt": 30,
+    "spendAmt": 12281,
+    "convCnt": 1,
+    "convAmt": 43029,
+    "avgRank": 4.2
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1505,
+    "clkCnt": 50,
+    "spendAmt": 38714,
+    "convCnt": 1,
+    "convAmt": 298499,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 707,
+    "clkCnt": 19,
+    "spendAmt": 17598,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1649,
+    "clkCnt": 36,
+    "spendAmt": 23925,
+    "convCnt": 1,
+    "convAmt": 116513,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7259,
+    "clkCnt": 210,
+    "spendAmt": 130727,
+    "convCnt": 6,
+    "convAmt": 643177,
+    "hourlyImpCnt": [
+     139,
+     92,
+     58,
+     46,
+     46,
+     69,
+     139,
+     277,
+     439,
+     578,
+     670,
+     716,
+     693,
+     647,
+     624,
+     601,
+     578,
+     554,
+     295,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2204,
+    "clkCnt": 68,
+    "spendAmt": 22161,
+    "convCnt": 3,
+    "convAmt": 89763,
+    "avgRank": 2.0
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1181,
+    "clkCnt": 32,
+    "spendAmt": 9563,
+    "convCnt": 2,
+    "convAmt": 54095,
+    "avgRank": 4.5
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1253,
+    "clkCnt": 35,
+    "spendAmt": 15596,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 873,
+    "clkCnt": 22,
+    "spendAmt": 8598,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.4
+   },
+   {
+    "statDt": "2026-10-02",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5511,
+    "clkCnt": 157,
+    "spendAmt": 55918,
+    "convCnt": 5,
+    "convAmt": 143858,
+    "hourlyImpCnt": [
+     77,
+     51,
+     32,
+     26,
+     26,
+     39,
+     77,
+     154,
+     244,
+     321,
+     372,
+     398,
+     385,
+     360,
+     347,
+     334,
+     321,
+     308,
+     295,
+     321,
+     372,
+     398,
+     252,
+     0
+    ],
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 784,
+    "clkCnt": 76,
+    "spendAmt": 13637,
+    "convCnt": 4,
+    "convAmt": 361656,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 388,
+    "clkCnt": 27,
+    "spendAmt": 4418,
+    "convCnt": 2,
+    "convAmt": 116834,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1172,
+    "clkCnt": 103,
+    "spendAmt": 18055,
+    "convCnt": 6,
+    "convAmt": 478490,
+    "hourlyImpCnt": [
+     15,
+     10,
+     6,
+     5,
+     5,
+     8,
+     15,
+     31,
+     49,
+     64,
+     75,
+     80,
+     77,
+     72,
+     70,
+     67,
+     64,
+     62,
+     59,
+     64,
+     75,
+     80,
+     70,
+     46
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1723,
+    "clkCnt": 50,
+    "spendAmt": 25406,
+    "convCnt": 2,
+    "convAmt": 113014,
+    "avgRank": 1.9
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 993,
+    "clkCnt": 24,
+    "spendAmt": 9455,
+    "convCnt": 1,
+    "convAmt": 49348,
+    "avgRank": 3.9
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1327,
+    "clkCnt": 37,
+    "spendAmt": 27605,
+    "convCnt": 1,
+    "convAmt": 265653,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 656,
+    "clkCnt": 16,
+    "spendAmt": 15746,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1359,
+    "clkCnt": 28,
+    "spendAmt": 18274,
+    "convCnt": 1,
+    "convAmt": 109373,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 6058,
+    "clkCnt": 155,
+    "spendAmt": 96486,
+    "convCnt": 5,
+    "convAmt": 537388,
+    "hourlyImpCnt": [
+     80,
+     53,
+     33,
+     27,
+     27,
+     40,
+     80,
+     160,
+     253,
+     333,
+     387,
+     413,
+     400,
+     373,
+     360,
+     347,
+     333,
+     320,
+     307,
+     333,
+     387,
+     413,
+     360,
+     240
+    ],
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2127,
+    "clkCnt": 62,
+    "spendAmt": 20931,
+    "convCnt": 3,
+    "convAmt": 91232,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 978,
+    "clkCnt": 22,
+    "spendAmt": 6571,
+    "convCnt": 1,
+    "convAmt": 27566,
+    "avgRank": 4.8
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1092,
+    "clkCnt": 33,
+    "spendAmt": 13912,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.9
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 847,
+    "clkCnt": 19,
+    "spendAmt": 7443,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-03",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5044,
+    "clkCnt": 136,
+    "spendAmt": 48857,
+    "convCnt": 4,
+    "convAmt": 118798,
+    "hourlyImpCnt": [
+     67,
+     44,
+     28,
+     22,
+     22,
+     33,
+     67,
+     133,
+     211,
+     277,
+     322,
+     344,
+     333,
+     311,
+     300,
+     289,
+     277,
+     266,
+     255,
+     277,
+     322,
+     344,
+     300,
+     200
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 783,
+    "clkCnt": 73,
+    "spendAmt": 12658,
+    "convCnt": 5,
+    "convAmt": 423489,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 373,
+    "clkCnt": 25,
+    "spendAmt": 4009,
+    "convCnt": 2,
+    "convAmt": 118956,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1156,
+    "clkCnt": 98,
+    "spendAmt": 16667,
+    "convCnt": 7,
+    "convAmt": 542445,
+    "hourlyImpCnt": [
+     15,
+     10,
+     6,
+     5,
+     5,
+     8,
+     15,
+     31,
+     48,
+     64,
+     74,
+     79,
+     76,
+     71,
+     69,
+     66,
+     64,
+     61,
+     58,
+     64,
+     74,
+     79,
+     69,
+     46
+    ],
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 1945,
+    "clkCnt": 59,
+    "spendAmt": 29306,
+    "convCnt": 2,
+    "convAmt": 117141,
+    "avgRank": 2.1
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1103,
+    "clkCnt": 25,
+    "spendAmt": 10026,
+    "convCnt": 1,
+    "convAmt": 48512,
+    "avgRank": 4.0
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1237,
+    "clkCnt": 39,
+    "spendAmt": 28154,
+    "convCnt": 1,
+    "convAmt": 263209,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 698,
+    "clkCnt": 19,
+    "spendAmt": 17113,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1449,
+    "clkCnt": 30,
+    "spendAmt": 18854,
+    "convCnt": 1,
+    "convAmt": 119137,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 6432,
+    "clkCnt": 172,
+    "spendAmt": 103453,
+    "convCnt": 5,
+    "convAmt": 547999,
+    "hourlyImpCnt": [
+     85,
+     57,
+     35,
+     28,
+     28,
+     42,
+     85,
+     170,
+     269,
+     354,
+     410,
+     439,
+     425,
+     396,
+     382,
+     368,
+     354,
+     340,
+     326,
+     354,
+     410,
+     439,
+     382,
+     255
+    ],
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2190,
+    "clkCnt": 66,
+    "spendAmt": 21219,
+    "convCnt": 3,
+    "convAmt": 99763,
+    "avgRank": 2.1
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1131,
+    "clkCnt": 31,
+    "spendAmt": 8881,
+    "convCnt": 2,
+    "convAmt": 54858,
+    "avgRank": 4.7
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1091,
+    "clkCnt": 32,
+    "spendAmt": 13529,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 782,
+    "clkCnt": 20,
+    "spendAmt": 7656,
+    "convCnt": 1,
+    "convAmt": 33389,
+    "avgRank": 3.3
+   },
+   {
+    "statDt": "2026-10-04",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5194,
+    "clkCnt": 149,
+    "spendAmt": 51285,
+    "convCnt": 6,
+    "convAmt": 188010,
+    "hourlyImpCnt": [
+     69,
+     46,
+     29,
+     23,
+     23,
+     34,
+     69,
+     137,
+     217,
+     286,
+     331,
+     354,
+     343,
+     320,
+     309,
+     297,
+     286,
+     274,
+     263,
+     286,
+     331,
+     354,
+     309,
+     206
+    ],
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 871,
+    "clkCnt": 80,
+    "spendAmt": 14740,
+    "convCnt": 5,
+    "convAmt": 384752,
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 402,
+    "clkCnt": 27,
+    "spendAmt": 4314,
+    "convCnt": 1,
+    "convAmt": 65740,
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1273,
+    "clkCnt": 107,
+    "spendAmt": 19054,
+    "convCnt": 6,
+    "convAmt": 450492,
+    "hourlyImpCnt": [
+     17,
+     11,
+     7,
+     6,
+     6,
+     8,
+     17,
+     34,
+     53,
+     70,
+     81,
+     87,
+     84,
+     78,
+     76,
+     73,
+     70,
+     67,
+     64,
+     70,
+     81,
+     87,
+     76,
+     50
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2386,
+    "clkCnt": 80,
+    "spendAmt": 41678,
+    "convCnt": 3,
+    "convAmt": 175716,
+    "avgRank": 1.9
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1195,
+    "clkCnt": 31,
+    "spendAmt": 12402,
+    "convCnt": 1,
+    "convAmt": 48373,
+    "avgRank": 4.0
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1549,
+    "clkCnt": 45,
+    "spendAmt": 33114,
+    "convCnt": 1,
+    "convAmt": 294819,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 824,
+    "clkCnt": 21,
+    "spendAmt": 20349,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1726,
+    "clkCnt": 35,
+    "spendAmt": 22298,
+    "convCnt": 1,
+    "convAmt": 129393,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7680,
+    "clkCnt": 212,
+    "spendAmt": 129841,
+    "convCnt": 6,
+    "convAmt": 648301,
+    "hourlyImpCnt": [
+     162,
+     108,
+     68,
+     54,
+     54,
+     81,
+     162,
+     324,
+     514,
+     676,
+     784,
+     838,
+     811,
+     757,
+     730,
+     703,
+     676,
+     176,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2427,
+    "clkCnt": 68,
+    "spendAmt": 21589,
+    "convCnt": 4,
+    "convAmt": 129469,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1193,
+    "clkCnt": 31,
+    "spendAmt": 9188,
+    "convCnt": 2,
+    "convAmt": 53537,
+    "avgRank": 4.8
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1359,
+    "clkCnt": 38,
+    "spendAmt": 16851,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 885,
+    "clkCnt": 22,
+    "spendAmt": 8233,
+    "convCnt": 1,
+    "convAmt": 33089,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-10-05",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5864,
+    "clkCnt": 159,
+    "spendAmt": 55861,
+    "convCnt": 7,
+    "convAmt": 216095,
+    "hourlyImpCnt": [
+     83,
+     55,
+     35,
+     28,
+     28,
+     42,
+     83,
+     166,
+     263,
+     346,
+     401,
+     429,
+     415,
+     387,
+     374,
+     360,
+     346,
+     332,
+     318,
+     346,
+     401,
+     429,
+     198,
+     0
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 1017,
+    "clkCnt": 95,
+    "spendAmt": 16417,
+    "convCnt": 6,
+    "convAmt": 484966,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 412,
+    "clkCnt": 29,
+    "spendAmt": 4446,
+    "convCnt": 2,
+    "convAmt": 110860,
+    "avgRank": 1.4
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1429,
+    "clkCnt": 124,
+    "spendAmt": 20863,
+    "convCnt": 8,
+    "convAmt": 595826,
+    "hourlyImpCnt": [
+     19,
+     13,
+     8,
+     6,
+     6,
+     9,
+     19,
+     38,
+     60,
+     79,
+     91,
+     97,
+     94,
+     88,
+     85,
+     82,
+     79,
+     75,
+     72,
+     79,
+     91,
+     97,
+     85,
+     57
+    ],
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2276,
+    "clkCnt": 69,
+    "spendAmt": 35124,
+    "convCnt": 2,
+    "convAmt": 117884,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1291,
+    "clkCnt": 32,
+    "spendAmt": 13226,
+    "convCnt": 2,
+    "convAmt": 92186,
+    "avgRank": 4.1
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1638,
+    "clkCnt": 51,
+    "spendAmt": 37576,
+    "convCnt": 1,
+    "convAmt": 266452,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 795,
+    "clkCnt": 20,
+    "spendAmt": 19417,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.9
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1889,
+    "clkCnt": 40,
+    "spendAmt": 24956,
+    "convCnt": 1,
+    "convAmt": 113006,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7889,
+    "clkCnt": 212,
+    "spendAmt": 130299,
+    "convCnt": 6,
+    "convAmt": 589528,
+    "hourlyImpCnt": [
+     169,
+     112,
+     70,
+     56,
+     56,
+     84,
+     169,
+     337,
+     534,
+     703,
+     815,
+     872,
+     843,
+     787,
+     759,
+     731,
+     703,
+     87,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2631,
+    "clkCnt": 75,
+    "spendAmt": 24312,
+    "convCnt": 4,
+    "convAmt": 123353,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1226,
+    "clkCnt": 29,
+    "spendAmt": 9156,
+    "convCnt": 2,
+    "convAmt": 51375,
+    "avgRank": 4.5
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1329,
+    "clkCnt": 35,
+    "spendAmt": 14736,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 885,
+    "clkCnt": 22,
+    "spendAmt": 7975,
+    "convCnt": 1,
+    "convAmt": 34376,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-06",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 6071,
+    "clkCnt": 161,
+    "spendAmt": 56179,
+    "convCnt": 7,
+    "convAmt": 209104,
+    "hourlyImpCnt": [
+     83,
+     55,
+     34,
+     28,
+     28,
+     41,
+     83,
+     165,
+     262,
+     345,
+     400,
+     427,
+     413,
+     386,
+     372,
+     358,
+     345,
+     331,
+     317,
+     345,
+     400,
+     427,
+     372,
+     55
+    ],
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 910,
+    "clkCnt": 80,
+    "spendAmt": 14343,
+    "convCnt": 5,
+    "convAmt": 426540,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 435,
+    "clkCnt": 28,
+    "spendAmt": 4570,
+    "convCnt": 1,
+    "convAmt": 54282,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1345,
+    "clkCnt": 108,
+    "spendAmt": 18913,
+    "convCnt": 6,
+    "convAmt": 480822,
+    "hourlyImpCnt": [
+     18,
+     12,
+     7,
+     6,
+     6,
+     9,
+     18,
+     36,
+     56,
+     74,
+     86,
+     92,
+     89,
+     83,
+     80,
+     77,
+     74,
+     71,
+     68,
+     74,
+     86,
+     92,
+     80,
+     53
+    ],
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2347,
+    "clkCnt": 74,
+    "spendAmt": 38711,
+    "convCnt": 3,
+    "convAmt": 159500,
+    "avgRank": 1.9
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1226,
+    "clkCnt": 29,
+    "spendAmt": 11445,
+    "convCnt": 2,
+    "convAmt": 88208,
+    "avgRank": 4.3
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1649,
+    "clkCnt": 45,
+    "spendAmt": 35586,
+    "convCnt": 1,
+    "convAmt": 277312,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 810,
+    "clkCnt": 20,
+    "spendAmt": 19078,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1720,
+    "clkCnt": 40,
+    "spendAmt": 24900,
+    "convCnt": 1,
+    "convAmt": 121300,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7752,
+    "clkCnt": 208,
+    "spendAmt": 129720,
+    "convCnt": 7,
+    "convAmt": 646320,
+    "hourlyImpCnt": [
+     169,
+     113,
+     70,
+     56,
+     56,
+     84,
+     169,
+     338,
+     535,
+     704,
+     817,
+     873,
+     845,
+     789,
+     760,
+     732,
+     640,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2350,
+    "clkCnt": 67,
+    "spendAmt": 21679,
+    "convCnt": 3,
+    "convAmt": 93077,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1263,
+    "clkCnt": 29,
+    "spendAmt": 8968,
+    "convCnt": 1,
+    "convAmt": 28150,
+    "avgRank": 4.9
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1408,
+    "clkCnt": 36,
+    "spendAmt": 15387,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 970,
+    "clkCnt": 21,
+    "spendAmt": 8237,
+    "convCnt": 1,
+    "convAmt": 34009,
+    "avgRank": 3.3
+   },
+   {
+    "statDt": "2026-10-07",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5991,
+    "clkCnt": 153,
+    "spendAmt": 54271,
+    "convCnt": 5,
+    "convAmt": 155236,
+    "hourlyImpCnt": [
+     79,
+     53,
+     33,
+     26,
+     26,
+     40,
+     79,
+     158,
+     250,
+     330,
+     382,
+     409,
+     395,
+     369,
+     356,
+     343,
+     330,
+     316,
+     303,
+     330,
+     382,
+     409,
+     356,
+     237
+    ],
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 1007,
+    "clkCnt": 87,
+    "spendAmt": 15975,
+    "convCnt": 6,
+    "convAmt": 499551,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 419,
+    "clkCnt": 31,
+    "spendAmt": 5106,
+    "convCnt": 2,
+    "convAmt": 113471,
+    "avgRank": 1.3
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1426,
+    "clkCnt": 118,
+    "spendAmt": 21081,
+    "convCnt": 8,
+    "convAmt": 613022,
+    "hourlyImpCnt": [
+     19,
+     13,
+     8,
+     6,
+     6,
+     9,
+     19,
+     38,
+     60,
+     78,
+     91,
+     97,
+     94,
+     88,
+     85,
+     82,
+     78,
+     75,
+     72,
+     78,
+     91,
+     97,
+     85,
+     56
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2372,
+    "clkCnt": 75,
+    "spendAmt": 39372,
+    "convCnt": 3,
+    "convAmt": 186226,
+    "avgRank": 2.0
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1264,
+    "clkCnt": 30,
+    "spendAmt": 12750,
+    "convCnt": 1,
+    "convAmt": 41150,
+    "avgRank": 4.3
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1515,
+    "clkCnt": 48,
+    "spendAmt": 36313,
+    "convCnt": 1,
+    "convAmt": 310994,
+    "avgRank": 2.6
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 795,
+    "clkCnt": 19,
+    "spendAmt": 17436,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.9
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1667,
+    "clkCnt": 37,
+    "spendAmt": 24488,
+    "convCnt": 1,
+    "convAmt": 126620,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7613,
+    "clkCnt": 209,
+    "spendAmt": 130359,
+    "convCnt": 6,
+    "convAmt": 664990,
+    "hourlyImpCnt": [
+     165,
+     110,
+     69,
+     55,
+     55,
+     83,
+     165,
+     331,
+     523,
+     689,
+     799,
+     854,
+     826,
+     771,
+     744,
+     716,
+     659,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2311,
+    "clkCnt": 68,
+    "spendAmt": 23258,
+    "convCnt": 4,
+    "convAmt": 115959,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1187,
+    "clkCnt": 27,
+    "spendAmt": 7802,
+    "convCnt": 2,
+    "convAmt": 58136,
+    "avgRank": 4.8
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1395,
+    "clkCnt": 39,
+    "spendAmt": 17393,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 860,
+    "clkCnt": 19,
+    "spendAmt": 7519,
+    "convCnt": 1,
+    "convAmt": 37998,
+    "avgRank": 3.5
+   },
+   {
+    "statDt": "2026-10-08",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5753,
+    "clkCnt": 153,
+    "spendAmt": 55972,
+    "convCnt": 7,
+    "convAmt": 212093,
+    "hourlyImpCnt": [
+     80,
+     54,
+     34,
+     27,
+     27,
+     40,
+     80,
+     161,
+     255,
+     335,
+     389,
+     415,
+     402,
+     375,
+     362,
+     348,
+     335,
+     322,
+     308,
+     335,
+     389,
+     415,
+     265,
+     0
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 898,
+    "clkCnt": 88,
+    "spendAmt": 16275,
+    "convCnt": 6,
+    "convAmt": 549976,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 425,
+    "clkCnt": 31,
+    "spendAmt": 4733,
+    "convCnt": 2,
+    "convAmt": 109496,
+    "avgRank": 1.4
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1323,
+    "clkCnt": 119,
+    "spendAmt": 21008,
+    "convCnt": 8,
+    "convAmt": 659472,
+    "hourlyImpCnt": [
+     17,
+     12,
+     7,
+     6,
+     6,
+     9,
+     17,
+     35,
+     55,
+     73,
+     84,
+     90,
+     87,
+     82,
+     79,
+     76,
+     73,
+     70,
+     67,
+     73,
+     84,
+     90,
+     79,
+     52
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2389,
+    "clkCnt": 71,
+    "spendAmt": 34332,
+    "convCnt": 3,
+    "convAmt": 178225,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1378,
+    "clkCnt": 34,
+    "spendAmt": 14218,
+    "convCnt": 1,
+    "convAmt": 44997,
+    "avgRank": 3.9
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1500,
+    "clkCnt": 49,
+    "spendAmt": 38756,
+    "convCnt": 1,
+    "convAmt": 288059,
+    "avgRank": 2.1
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 773,
+    "clkCnt": 19,
+    "spendAmt": 18634,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1872,
+    "clkCnt": 40,
+    "spendAmt": 25097,
+    "convCnt": 1,
+    "convAmt": 130480,
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7912,
+    "clkCnt": 213,
+    "spendAmt": 131037,
+    "convCnt": 6,
+    "convAmt": 641761,
+    "hourlyImpCnt": [
+     170,
+     113,
+     71,
+     57,
+     57,
+     85,
+     170,
+     340,
+     538,
+     707,
+     821,
+     877,
+     849,
+     792,
+     764,
+     736,
+     707,
+     59,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2571,
+    "clkCnt": 79,
+    "spendAmt": 24617,
+    "convCnt": 4,
+    "convAmt": 126205,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1300,
+    "clkCnt": 33,
+    "spendAmt": 9480,
+    "convCnt": 1,
+    "convAmt": 27472,
+    "avgRank": 4.4
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1250,
+    "clkCnt": 33,
+    "spendAmt": 14053,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 871,
+    "clkCnt": 20,
+    "spendAmt": 7879,
+    "convCnt": 1,
+    "convAmt": 35694,
+    "avgRank": 3.3
+   },
+   {
+    "statDt": "2026-10-09",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5992,
+    "clkCnt": 165,
+    "spendAmt": 56029,
+    "convCnt": 6,
+    "convAmt": 189371,
+    "hourlyImpCnt": [
+     82,
+     55,
+     34,
+     27,
+     27,
+     41,
+     82,
+     164,
+     259,
+     341,
+     396,
+     423,
+     409,
+     382,
+     368,
+     355,
+     341,
+     327,
+     314,
+     341,
+     396,
+     423,
+     368,
+     37
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 843,
+    "clkCnt": 79,
+    "spendAmt": 14499,
+    "convCnt": 5,
+    "convAmt": 400814,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 364,
+    "clkCnt": 28,
+    "spendAmt": 4433,
+    "convCnt": 1,
+    "convAmt": 58785,
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1207,
+    "clkCnt": 107,
+    "spendAmt": 18932,
+    "convCnt": 6,
+    "convAmt": 459599,
+    "hourlyImpCnt": [
+     16,
+     11,
+     7,
+     5,
+     5,
+     8,
+     16,
+     32,
+     50,
+     66,
+     77,
+     82,
+     80,
+     74,
+     72,
+     69,
+     66,
+     64,
+     61,
+     66,
+     77,
+     82,
+     72,
+     48
+    ],
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2302,
+    "clkCnt": 68,
+    "spendAmt": 33615,
+    "convCnt": 2,
+    "convAmt": 114555,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1343,
+    "clkCnt": 30,
+    "spendAmt": 11996,
+    "convCnt": 1,
+    "convAmt": 45685,
+    "avgRank": 4.1
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1622,
+    "clkCnt": 50,
+    "spendAmt": 38370,
+    "convCnt": 1,
+    "convAmt": 266595,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 772,
+    "clkCnt": 21,
+    "spendAmt": 19040,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1687,
+    "clkCnt": 40,
+    "spendAmt": 25801,
+    "convCnt": 1,
+    "convAmt": 113376,
+    "avgRank": 2.9
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7726,
+    "clkCnt": 209,
+    "spendAmt": 128822,
+    "convCnt": 5,
+    "convAmt": 540211,
+    "hourlyImpCnt": [
+     102,
+     68,
+     42,
+     34,
+     34,
+     51,
+     102,
+     204,
+     323,
+     425,
+     493,
+     527,
+     510,
+     476,
+     459,
+     442,
+     425,
+     408,
+     391,
+     425,
+     493,
+     527,
+     459,
+     306
+    ],
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2131,
+    "clkCnt": 70,
+    "spendAmt": 22237,
+    "convCnt": 3,
+    "convAmt": 100629,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1038,
+    "clkCnt": 28,
+    "spendAmt": 8367,
+    "convCnt": 2,
+    "convAmt": 53477,
+    "avgRank": 4.8
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1210,
+    "clkCnt": 31,
+    "spendAmt": 14158,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 854,
+    "clkCnt": 21,
+    "spendAmt": 8241,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.6
+   },
+   {
+    "statDt": "2026-10-10",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5233,
+    "clkCnt": 150,
+    "spendAmt": 53003,
+    "convCnt": 5,
+    "convAmt": 154106,
+    "hourlyImpCnt": [
+     69,
+     46,
+     29,
+     23,
+     23,
+     35,
+     69,
+     138,
+     219,
+     288,
+     334,
+     357,
+     345,
+     322,
+     311,
+     299,
+     288,
+     276,
+     265,
+     288,
+     334,
+     357,
+     311,
+     207
+    ],
+    "avgRank": 3.2
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 889,
+    "clkCnt": 74,
+    "spendAmt": 12700,
+    "convCnt": 4,
+    "convAmt": 323709,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 385,
+    "clkCnt": 26,
+    "spendAmt": 3995,
+    "convCnt": 1,
+    "convAmt": 64483,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1274,
+    "clkCnt": 100,
+    "spendAmt": 16695,
+    "convCnt": 5,
+    "convAmt": 388192,
+    "hourlyImpCnt": [
+     17,
+     11,
+     7,
+     6,
+     6,
+     8,
+     17,
+     34,
+     53,
+     70,
+     81,
+     87,
+     84,
+     79,
+     76,
+     73,
+     70,
+     67,
+     64,
+     70,
+     81,
+     87,
+     76,
+     50
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2189,
+    "clkCnt": 65,
+    "spendAmt": 32405,
+    "convCnt": 2,
+    "convAmt": 111836,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1330,
+    "clkCnt": 30,
+    "spendAmt": 12582,
+    "convCnt": 1,
+    "convAmt": 42152,
+    "avgRank": 4.2
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1485,
+    "clkCnt": 43,
+    "spendAmt": 32584,
+    "convCnt": 1,
+    "convAmt": 271215,
+    "avgRank": 2.2
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 708,
+    "clkCnt": 20,
+    "spendAmt": 18667,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.9
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1615,
+    "clkCnt": 38,
+    "spendAmt": 25374,
+    "convCnt": 1,
+    "convAmt": 118553,
+    "avgRank": 2.3
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7327,
+    "clkCnt": 196,
+    "spendAmt": 121612,
+    "convCnt": 5,
+    "convAmt": 543756,
+    "hourlyImpCnt": [
+     97,
+     64,
+     40,
+     32,
+     32,
+     48,
+     97,
+     193,
+     306,
+     403,
+     467,
+     500,
+     484,
+     451,
+     435,
+     419,
+     403,
+     387,
+     371,
+     403,
+     467,
+     500,
+     435,
+     290
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2333,
+    "clkCnt": 74,
+    "spendAmt": 23179,
+    "convCnt": 4,
+    "convAmt": 125205,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1118,
+    "clkCnt": 28,
+    "spendAmt": 8652,
+    "convCnt": 2,
+    "convAmt": 52477,
+    "avgRank": 4.9
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1116,
+    "clkCnt": 29,
+    "spendAmt": 12944,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 824,
+    "clkCnt": 19,
+    "spendAmt": 7047,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-11",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5391,
+    "clkCnt": 150,
+    "spendAmt": 51822,
+    "convCnt": 6,
+    "convAmt": 177682,
+    "hourlyImpCnt": [
+     71,
+     47,
+     30,
+     24,
+     24,
+     36,
+     71,
+     142,
+     225,
+     296,
+     344,
+     368,
+     356,
+     332,
+     320,
+     308,
+     296,
+     285,
+     273,
+     296,
+     344,
+     368,
+     320,
+     213
+    ],
+    "avgRank": 3.1
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-brand",
+    "impCnt": 960,
+    "clkCnt": 92,
+    "spendAmt": 16698,
+    "convCnt": 5,
+    "convAmt": 402696,
+    "avgRank": 1.0
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-brand-dumbbell",
+    "impCnt": 446,
+    "clkCnt": 33,
+    "spendAmt": 5044,
+    "convCnt": 2,
+    "convAmt": 128335,
+    "avgRank": 1.2
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "campaign",
+    "id": "cmp-brand",
+    "impCnt": 1406,
+    "clkCnt": 125,
+    "spendAmt": 21742,
+    "convCnt": 7,
+    "convAmt": 531031,
+    "hourlyImpCnt": [
+     19,
+     12,
+     8,
+     6,
+     6,
+     9,
+     19,
+     37,
+     59,
+     77,
+     90,
+     96,
+     93,
+     87,
+     84,
+     80,
+     77,
+     74,
+     71,
+     77,
+     90,
+     96,
+     84,
+     56
+    ],
+    "avgRank": 1.1
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-dumbbell",
+    "impCnt": 2371,
+    "clkCnt": 70,
+    "spendAmt": 35844,
+    "convCnt": 3,
+    "convAmt": 163736,
+    "avgRank": 2.1
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-kettlebell",
+    "impCnt": 1355,
+    "clkCnt": 33,
+    "spendAmt": 13354,
+    "convCnt": 2,
+    "convAmt": 81722,
+    "avgRank": 4.3
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-bike",
+    "impCnt": 1594,
+    "clkCnt": 50,
+    "spendAmt": 36395,
+    "convCnt": 1,
+    "convAmt": 307347,
+    "avgRank": 2.4
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-foldbike",
+    "impCnt": 788,
+    "clkCnt": 21,
+    "spendAmt": 19893,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 2.8
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-homegym",
+    "impCnt": 1824,
+    "clkCnt": 38,
+    "spendAmt": 25356,
+    "convCnt": 1,
+    "convAmt": 128519,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "campaign",
+    "id": "cmp-homegym",
+    "impCnt": 7932,
+    "clkCnt": 212,
+    "spendAmt": 130842,
+    "convCnt": 7,
+    "convAmt": 681324,
+    "hourlyImpCnt": [
+     160,
+     107,
+     67,
+     53,
+     53,
+     80,
+     160,
+     320,
+     506,
+     666,
+     772,
+     825,
+     799,
+     746,
+     719,
+     692,
+     666,
+     542,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "avgRank": 2.7
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-yogamat",
+    "impCnt": 2310,
+    "clkCnt": 67,
+    "spendAmt": 22233,
+    "convCnt": 4,
+    "convAmt": 134462,
+    "avgRank": 2.5
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-foamroller",
+    "impCnt": 1228,
+    "clkCnt": 33,
+    "spendAmt": 9562,
+    "convCnt": 2,
+    "convAmt": 50935,
+    "avgRank": 4.9
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-pilatesring",
+    "impCnt": 1333,
+    "clkCnt": 37,
+    "spendAmt": 17170,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.0
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "keyword",
+    "id": "kw-pilatestools",
+    "impCnt": 869,
+    "clkCnt": 19,
+    "spendAmt": 6960,
+    "convCnt": 0,
+    "convAmt": 0,
+    "avgRank": 3.5
+   },
+   {
+    "statDt": "2026-10-12",
+    "level": "campaign",
+    "id": "cmp-yoga",
+    "impCnt": 5740,
+    "clkCnt": 156,
+    "spendAmt": 55925,
+    "convCnt": 6,
+    "convAmt": 185397,
+    "hourlyImpCnt": [
+     81,
+     54,
+     34,
+     27,
+     27,
+     40,
+     81,
+     162,
+     256,
+     337,
+     391,
+     417,
+     404,
+     377,
+     364,
+     350,
+     337,
+     323,
+     310,
+     337,
+     391,
+     417,
+     225,
+     0
+    ],
+    "avgRank": 3.3
+   }
+  ],
+  "mt-fitroutine": [
+   {
+    "date_start": "2026-09-15",
+    "date_stop": "2026-09-15",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7753",
+    "clicks": "98",
+    "spend": "54270",
+    "frequency": "1.96",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "143164"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-15",
+    "date_stop": "2026-09-15",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5692",
+    "clicks": "97",
+    "spend": "42688",
+    "frequency": "2.08",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "142928"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-15",
+    "date_stop": "2026-09-15",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8721",
+    "clicks": "163",
+    "spend": "69770",
+    "frequency": "1.67",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "379142"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-15",
+    "date_stop": "2026-09-15",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6745",
+    "clicks": "81",
+    "spend": "47212",
+    "frequency": "1.76",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "135716"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-15",
+    "date_stop": "2026-09-15",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3906",
+    "clicks": "86",
+    "spend": "46868",
+    "frequency": "2.57",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "3"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "212644"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-15",
+    "date_stop": "2026-09-15",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8595",
+    "clicks": "74",
+    "spend": "42977",
+    "frequency": "1.47",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "68283"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-15",
+    "date_stop": "2026-09-15",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "7106",
+    "clicks": "43",
+    "spend": "35529",
+    "frequency": "1.56",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-16",
+    "date_stop": "2026-09-16",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7460",
+    "clicks": "103",
+    "spend": "52217",
+    "frequency": "1.91",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "132259"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-16",
+    "date_stop": "2026-09-16",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5719",
+    "clicks": "99",
+    "spend": "42893",
+    "frequency": "2.16",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "144359"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-16",
+    "date_stop": "2026-09-16",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8882",
+    "clicks": "154",
+    "spend": "71055",
+    "frequency": "1.74",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "372611"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-16",
+    "date_stop": "2026-09-16",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6834",
+    "clicks": "77",
+    "spend": "47841",
+    "frequency": "1.77",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "158997"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-16",
+    "date_stop": "2026-09-16",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3982",
+    "clicks": "92",
+    "spend": "47789",
+    "frequency": "2.61",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "297249"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-16",
+    "date_stop": "2026-09-16",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8606",
+    "clicks": "69",
+    "spend": "43031",
+    "frequency": "1.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "64155"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-16",
+    "date_stop": "2026-09-16",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6822",
+    "clicks": "40",
+    "spend": "34109",
+    "frequency": "1.63",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "60408"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-17",
+    "date_stop": "2026-09-17",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7642",
+    "clicks": "99",
+    "spend": "53494",
+    "frequency": "1.85",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "134606"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-17",
+    "date_stop": "2026-09-17",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5875",
+    "clicks": "86",
+    "spend": "44059",
+    "frequency": "2.16",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "143063"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-17",
+    "date_stop": "2026-09-17",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8925",
+    "clicks": "165",
+    "spend": "71403",
+    "frequency": "1.70",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "448112"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-17",
+    "date_stop": "2026-09-17",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6433",
+    "clicks": "78",
+    "spend": "45031",
+    "frequency": "1.75",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "69497"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-17",
+    "date_stop": "2026-09-17",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4006",
+    "clicks": "101",
+    "spend": "48072",
+    "frequency": "2.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "263609"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-17",
+    "date_stop": "2026-09-17",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8746",
+    "clicks": "71",
+    "spend": "43729",
+    "frequency": "1.49",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-17",
+    "date_stop": "2026-09-17",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "7011",
+    "clicks": "44",
+    "spend": "35056",
+    "frequency": "1.57",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-18",
+    "date_stop": "2026-09-18",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7815",
+    "clicks": "102",
+    "spend": "54708",
+    "frequency": "1.85",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "144887"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-18",
+    "date_stop": "2026-09-18",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5781",
+    "clicks": "95",
+    "spend": "43359",
+    "frequency": "2.11",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "147171"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-18",
+    "date_stop": "2026-09-18",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8401",
+    "clicks": "151",
+    "spend": "67210",
+    "frequency": "1.66",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "428884"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-18",
+    "date_stop": "2026-09-18",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6626",
+    "clicks": "86",
+    "spend": "46382",
+    "frequency": "1.78",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "157722"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-18",
+    "date_stop": "2026-09-18",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3922",
+    "clicks": "96",
+    "spend": "47062",
+    "frequency": "2.66",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "302844"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-18",
+    "date_stop": "2026-09-18",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8220",
+    "clicks": "64",
+    "spend": "41100",
+    "frequency": "1.54",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "64177"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-18",
+    "date_stop": "2026-09-18",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6701",
+    "clicks": "38",
+    "spend": "33503",
+    "frequency": "1.56",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-19",
+    "date_stop": "2026-09-19",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7571",
+    "clicks": "92",
+    "spend": "53000",
+    "frequency": "1.94",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "72269"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-19",
+    "date_stop": "2026-09-19",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5784",
+    "clicks": "87",
+    "spend": "43378",
+    "frequency": "2.05",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "137602"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-19",
+    "date_stop": "2026-09-19",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8603",
+    "clicks": "168",
+    "spend": "68825",
+    "frequency": "1.69",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "7"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "599816"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-19",
+    "date_stop": "2026-09-19",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6541",
+    "clicks": "76",
+    "spend": "45789",
+    "frequency": "1.80",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "139230"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-19",
+    "date_stop": "2026-09-19",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4099",
+    "clicks": "96",
+    "spend": "49186",
+    "frequency": "2.66",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "286388"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-19",
+    "date_stop": "2026-09-19",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8642",
+    "clicks": "73",
+    "spend": "43211",
+    "frequency": "1.54",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "73618"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-19",
+    "date_stop": "2026-09-19",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6989",
+    "clicks": "46",
+    "spend": "34945",
+    "frequency": "1.60",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "61384"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-20",
+    "date_stop": "2026-09-20",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7503",
+    "clicks": "103",
+    "spend": "52524",
+    "frequency": "1.88",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "147529"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-20",
+    "date_stop": "2026-09-20",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5617",
+    "clicks": "94",
+    "spend": "42129",
+    "frequency": "2.04",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "144709"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-20",
+    "date_stop": "2026-09-20",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8965",
+    "clicks": "178",
+    "spend": "71720",
+    "frequency": "1.66",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "497487"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-20",
+    "date_stop": "2026-09-20",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6800",
+    "clicks": "89",
+    "spend": "47603",
+    "frequency": "1.83",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "143096"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-20",
+    "date_stop": "2026-09-20",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4108",
+    "clicks": "95",
+    "spend": "49297",
+    "frequency": "2.55",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "263510"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-20",
+    "date_stop": "2026-09-20",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8318",
+    "clicks": "73",
+    "spend": "41590",
+    "frequency": "1.47",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "76273"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-20",
+    "date_stop": "2026-09-20",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "7136",
+    "clicks": "39",
+    "spend": "35680",
+    "frequency": "1.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-21",
+    "date_stop": "2026-09-21",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7826",
+    "clicks": "100",
+    "spend": "54781",
+    "frequency": "1.92",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "135342"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-21",
+    "date_stop": "2026-09-21",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5587",
+    "clicks": "91",
+    "spend": "41904",
+    "frequency": "2.05",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "73538"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-21",
+    "date_stop": "2026-09-21",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8874",
+    "clicks": "176",
+    "spend": "70995",
+    "frequency": "1.65",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "7"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "515732"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-21",
+    "date_stop": "2026-09-21",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6722",
+    "clicks": "83",
+    "spend": "47055",
+    "frequency": "1.81",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "152511"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-21",
+    "date_stop": "2026-09-21",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4092",
+    "clicks": "95",
+    "spend": "49101",
+    "frequency": "2.58",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "3"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "201607"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-21",
+    "date_stop": "2026-09-21",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8374",
+    "clicks": "68",
+    "spend": "41870",
+    "frequency": "1.52",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "76134"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-21",
+    "date_stop": "2026-09-21",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6954",
+    "clicks": "43",
+    "spend": "34772",
+    "frequency": "1.56",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-22",
+    "date_stop": "2026-09-22",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7420",
+    "clicks": "104",
+    "spend": "51943",
+    "frequency": "1.89",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "145193"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-22",
+    "date_stop": "2026-09-22",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5686",
+    "clicks": "85",
+    "spend": "42648",
+    "frequency": "2.11",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "144807"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-22",
+    "date_stop": "2026-09-22",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8455",
+    "clicks": "171",
+    "spend": "67639",
+    "frequency": "1.69",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "457735"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-22",
+    "date_stop": "2026-09-22",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6570",
+    "clicks": "71",
+    "spend": "45989",
+    "frequency": "1.79",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "159294"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-22",
+    "date_stop": "2026-09-22",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3943",
+    "clicks": "88",
+    "spend": "47318",
+    "frequency": "2.61",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "3"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "218411"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-22",
+    "date_stop": "2026-09-22",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8665",
+    "clicks": "64",
+    "spend": "43324",
+    "frequency": "1.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-22",
+    "date_stop": "2026-09-22",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6807",
+    "clicks": "39",
+    "spend": "34033",
+    "frequency": "1.57",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-23",
+    "date_stop": "2026-09-23",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7812",
+    "clicks": "99",
+    "spend": "54686",
+    "frequency": "1.87",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "145509"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-23",
+    "date_stop": "2026-09-23",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5880",
+    "clicks": "103",
+    "spend": "44100",
+    "frequency": "2.16",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "126292"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-23",
+    "date_stop": "2026-09-23",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8562",
+    "clicks": "163",
+    "spend": "68496",
+    "frequency": "1.71",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "434262"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-23",
+    "date_stop": "2026-09-23",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6626",
+    "clicks": "76",
+    "spend": "46382",
+    "frequency": "1.84",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "142066"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-23",
+    "date_stop": "2026-09-23",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4006",
+    "clicks": "87",
+    "spend": "48075",
+    "frequency": "2.58",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "291540"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-23",
+    "date_stop": "2026-09-23",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8508",
+    "clicks": "72",
+    "spend": "42541",
+    "frequency": "1.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-23",
+    "date_stop": "2026-09-23",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6791",
+    "clicks": "40",
+    "spend": "33955",
+    "frequency": "1.63",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-24",
+    "date_stop": "2026-09-24",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7399",
+    "clicks": "91",
+    "spend": "51795",
+    "frequency": "1.93",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "138957"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-24",
+    "date_stop": "2026-09-24",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5887",
+    "clicks": "98",
+    "spend": "44150",
+    "frequency": "2.07",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "135001"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-24",
+    "date_stop": "2026-09-24",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8947",
+    "clicks": "182",
+    "spend": "71573",
+    "frequency": "1.74",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "477389"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-24",
+    "date_stop": "2026-09-24",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6516",
+    "clicks": "78",
+    "spend": "45610",
+    "frequency": "1.83",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "77792"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-24",
+    "date_stop": "2026-09-24",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4108",
+    "clicks": "104",
+    "spend": "49297",
+    "frequency": "2.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "275964"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-24",
+    "date_stop": "2026-09-24",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8604",
+    "clicks": "69",
+    "spend": "43021",
+    "frequency": "1.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "66078"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-24",
+    "date_stop": "2026-09-24",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6758",
+    "clicks": "41",
+    "spend": "33791",
+    "frequency": "1.64",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-25",
+    "date_stop": "2026-09-25",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7564",
+    "clicks": "97",
+    "spend": "52945",
+    "frequency": "1.91",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "138375"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-25",
+    "date_stop": "2026-09-25",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5666",
+    "clicks": "83",
+    "spend": "42492",
+    "frequency": "2.06",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "148318"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-25",
+    "date_stop": "2026-09-25",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8615",
+    "clicks": "175",
+    "spend": "68916",
+    "frequency": "1.68",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "464123"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-25",
+    "date_stop": "2026-09-25",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6517",
+    "clicks": "74",
+    "spend": "45616",
+    "frequency": "1.76",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "71936"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-25",
+    "date_stop": "2026-09-25",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4087",
+    "clicks": "106",
+    "spend": "49048",
+    "frequency": "2.55",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "359515"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-25",
+    "date_stop": "2026-09-25",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8344",
+    "clicks": "62",
+    "spend": "41721",
+    "frequency": "1.48",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-25",
+    "date_stop": "2026-09-25",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "7144",
+    "clicks": "44",
+    "spend": "35719",
+    "frequency": "1.63",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "55375"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-26",
+    "date_stop": "2026-09-26",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7707",
+    "clicks": "96",
+    "spend": "53949",
+    "frequency": "1.89",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "68714"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-26",
+    "date_stop": "2026-09-26",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5696",
+    "clicks": "100",
+    "spend": "42720",
+    "frequency": "2.04",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "133775"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-26",
+    "date_stop": "2026-09-26",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8857",
+    "clicks": "161",
+    "spend": "70856",
+    "frequency": "1.74",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "440120"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-26",
+    "date_stop": "2026-09-26",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6386",
+    "clicks": "73",
+    "spend": "44699",
+    "frequency": "1.77",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "69778"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-26",
+    "date_stop": "2026-09-26",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4085",
+    "clicks": "99",
+    "spend": "49024",
+    "frequency": "2.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "297910"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-26",
+    "date_stop": "2026-09-26",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8222",
+    "clicks": "69",
+    "spend": "41109",
+    "frequency": "1.48",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "65177"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-26",
+    "date_stop": "2026-09-26",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6938",
+    "clicks": "41",
+    "spend": "34689",
+    "frequency": "1.58",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-27",
+    "date_stop": "2026-09-27",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7546",
+    "clicks": "94",
+    "spend": "52824",
+    "frequency": "1.89",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "142312"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-27",
+    "date_stop": "2026-09-27",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5586",
+    "clicks": "86",
+    "spend": "41892",
+    "frequency": "2.16",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "135182"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-27",
+    "date_stop": "2026-09-27",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8852",
+    "clicks": "169",
+    "spend": "70812",
+    "frequency": "1.70",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "461464"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-27",
+    "date_stop": "2026-09-27",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6481",
+    "clicks": "79",
+    "spend": "45369",
+    "frequency": "1.78",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "162307"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-27",
+    "date_stop": "2026-09-27",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3891",
+    "clicks": "102",
+    "spend": "46686",
+    "frequency": "2.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "391680"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-27",
+    "date_stop": "2026-09-27",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8341",
+    "clicks": "72",
+    "spend": "41707",
+    "frequency": "1.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "72221"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-27",
+    "date_stop": "2026-09-27",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6993",
+    "clicks": "44",
+    "spend": "34963",
+    "frequency": "1.64",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-28",
+    "date_stop": "2026-09-28",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7766",
+    "clicks": "99",
+    "spend": "54361",
+    "frequency": "1.95",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "147471"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-28",
+    "date_stop": "2026-09-28",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5686",
+    "clicks": "97",
+    "spend": "42648",
+    "frequency": "2.08",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "71897"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-28",
+    "date_stop": "2026-09-28",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8396",
+    "clicks": "156",
+    "spend": "67165",
+    "frequency": "1.75",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "391774"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-28",
+    "date_stop": "2026-09-28",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6454",
+    "clicks": "79",
+    "spend": "45176",
+    "frequency": "1.81",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "154059"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-28",
+    "date_stop": "2026-09-28",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4057",
+    "clicks": "104",
+    "spend": "48684",
+    "frequency": "2.67",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "264681"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-28",
+    "date_stop": "2026-09-28",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8544",
+    "clicks": "65",
+    "spend": "42719",
+    "frequency": "1.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-28",
+    "date_stop": "2026-09-28",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "7040",
+    "clicks": "43",
+    "spend": "35198",
+    "frequency": "1.59",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "54747"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-29",
+    "date_stop": "2026-09-29",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7766",
+    "clicks": "97",
+    "spend": "54360",
+    "frequency": "1.95",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "75768"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-29",
+    "date_stop": "2026-09-29",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5775",
+    "clicks": "99",
+    "spend": "43313",
+    "frequency": "2.10",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "150484"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-29",
+    "date_stop": "2026-09-29",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8522",
+    "clicks": "176",
+    "spend": "68178",
+    "frequency": "1.65",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "507208"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-29",
+    "date_stop": "2026-09-29",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6456",
+    "clicks": "74",
+    "spend": "45193",
+    "frequency": "1.81",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "145550"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-29",
+    "date_stop": "2026-09-29",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4013",
+    "clicks": "106",
+    "spend": "48157",
+    "frequency": "2.67",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "287351"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-29",
+    "date_stop": "2026-09-29",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8474",
+    "clicks": "67",
+    "spend": "42369",
+    "frequency": "1.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "71662"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-29",
+    "date_stop": "2026-09-29",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6742",
+    "clicks": "40",
+    "spend": "33712",
+    "frequency": "1.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-30",
+    "date_stop": "2026-09-30",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7594",
+    "clicks": "91",
+    "spend": "53158",
+    "frequency": "1.93",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "66987"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-30",
+    "date_stop": "2026-09-30",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5856",
+    "clicks": "89",
+    "spend": "43920",
+    "frequency": "2.13",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "136589"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-30",
+    "date_stop": "2026-09-30",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8626",
+    "clicks": "168",
+    "spend": "69005",
+    "frequency": "1.73",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "462853"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-30",
+    "date_stop": "2026-09-30",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6393",
+    "clicks": "84",
+    "spend": "44753",
+    "frequency": "1.79",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "147897"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-30",
+    "date_stop": "2026-09-30",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4078",
+    "clicks": "100",
+    "spend": "48939",
+    "frequency": "2.59",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "278462"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-30",
+    "date_stop": "2026-09-30",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8315",
+    "clicks": "72",
+    "spend": "41576",
+    "frequency": "1.48",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "66982"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-09-30",
+    "date_stop": "2026-09-30",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "7061",
+    "clicks": "42",
+    "spend": "35304",
+    "frequency": "1.57",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-01",
+    "date_stop": "2026-10-01",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7799",
+    "clicks": "107",
+    "spend": "54593",
+    "frequency": "1.89",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "138535"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-01",
+    "date_stop": "2026-10-01",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5893",
+    "clicks": "99",
+    "spend": "44195",
+    "frequency": "2.10",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "128336"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-01",
+    "date_stop": "2026-10-01",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8488",
+    "clicks": "154",
+    "spend": "67901",
+    "frequency": "1.72",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "377602"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-01",
+    "date_stop": "2026-10-01",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6834",
+    "clicks": "85",
+    "spend": "47840",
+    "frequency": "1.78",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "148453"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-01",
+    "date_stop": "2026-10-01",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3938",
+    "clicks": "103",
+    "spend": "47258",
+    "frequency": "2.63",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "377137"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-01",
+    "date_stop": "2026-10-01",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8530",
+    "clicks": "66",
+    "spend": "42648",
+    "frequency": "1.46",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "70197"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-01",
+    "date_stop": "2026-10-01",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6898",
+    "clicks": "40",
+    "spend": "34489",
+    "frequency": "1.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-02",
+    "date_stop": "2026-10-02",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7402",
+    "clicks": "104",
+    "spend": "51815",
+    "frequency": "1.94",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "144067"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-02",
+    "date_stop": "2026-10-02",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5943",
+    "clicks": "104",
+    "spend": "44573",
+    "frequency": "2.11",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "127925"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-02",
+    "date_stop": "2026-10-02",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8749",
+    "clicks": "156",
+    "spend": "69990",
+    "frequency": "1.67",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "461523"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-02",
+    "date_stop": "2026-10-02",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6750",
+    "clicks": "79",
+    "spend": "47250",
+    "frequency": "1.82",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "147463"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-02",
+    "date_stop": "2026-10-02",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3894",
+    "clicks": "86",
+    "spend": "46729",
+    "frequency": "2.60",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "291402"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-02",
+    "date_stop": "2026-10-02",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8205",
+    "clicks": "68",
+    "spend": "41027",
+    "frequency": "1.48",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-02",
+    "date_stop": "2026-10-02",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6975",
+    "clicks": "38",
+    "spend": "34873",
+    "frequency": "1.61",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "63190"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-03",
+    "date_stop": "2026-10-03",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7504",
+    "clicks": "105",
+    "spend": "52525",
+    "frequency": "1.90",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "124784"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-03",
+    "date_stop": "2026-10-03",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5593",
+    "clicks": "87",
+    "spend": "41951",
+    "frequency": "2.10",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "133395"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-03",
+    "date_stop": "2026-10-03",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8408",
+    "clicks": "158",
+    "spend": "67267",
+    "frequency": "1.66",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "437950"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-03",
+    "date_stop": "2026-10-03",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6688",
+    "clicks": "83",
+    "spend": "46817",
+    "frequency": "1.82",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "147502"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-03",
+    "date_stop": "2026-10-03",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3970",
+    "clicks": "90",
+    "spend": "47638",
+    "frequency": "2.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "263475"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-03",
+    "date_stop": "2026-10-03",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8508",
+    "clicks": "64",
+    "spend": "42541",
+    "frequency": "1.49",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "76115"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-03",
+    "date_stop": "2026-10-03",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6732",
+    "clicks": "37",
+    "spend": "33658",
+    "frequency": "1.64",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-04",
+    "date_stop": "2026-10-04",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7764",
+    "clicks": "91",
+    "spend": "54348",
+    "frequency": "1.92",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "135819"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-04",
+    "date_stop": "2026-10-04",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5780",
+    "clicks": "97",
+    "spend": "43348",
+    "frequency": "2.11",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "124560"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-04",
+    "date_stop": "2026-10-04",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8881",
+    "clicks": "179",
+    "spend": "71045",
+    "frequency": "1.71",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "7"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "558821"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-04",
+    "date_stop": "2026-10-04",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6383",
+    "clicks": "79",
+    "spend": "44680",
+    "frequency": "1.78",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "76040"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-04",
+    "date_stop": "2026-10-04",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3903",
+    "clicks": "86",
+    "spend": "46842",
+    "frequency": "2.67",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "3"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "233362"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-04",
+    "date_stop": "2026-10-04",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8225",
+    "clicks": "70",
+    "spend": "41124",
+    "frequency": "1.47",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "68039"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-04",
+    "date_stop": "2026-10-04",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6837",
+    "clicks": "43",
+    "spend": "34184",
+    "frequency": "1.61",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-05",
+    "date_stop": "2026-10-05",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7836",
+    "clicks": "96",
+    "spend": "54853",
+    "frequency": "1.96",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "74060"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-05",
+    "date_stop": "2026-10-05",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5665",
+    "clicks": "99",
+    "spend": "42490",
+    "frequency": "2.09",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "147322"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-05",
+    "date_stop": "2026-10-05",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8617",
+    "clicks": "169",
+    "spend": "68939",
+    "frequency": "1.72",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "7"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "551491"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-05",
+    "date_stop": "2026-10-05",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6714",
+    "clicks": "86",
+    "spend": "47000",
+    "frequency": "1.84",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "70934"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-05",
+    "date_stop": "2026-10-05",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "3976",
+    "clicks": "103",
+    "spend": "47709",
+    "frequency": "2.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "259544"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-05",
+    "date_stop": "2026-10-05",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8699",
+    "clicks": "70",
+    "spend": "43497",
+    "frequency": "1.49",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "69295"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-05",
+    "date_stop": "2026-10-05",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6902",
+    "clicks": "37",
+    "spend": "34509",
+    "frequency": "1.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-06",
+    "date_stop": "2026-10-06",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7405",
+    "clicks": "90",
+    "spend": "51838",
+    "frequency": "1.94",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "130358"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-06",
+    "date_stop": "2026-10-06",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5910",
+    "clicks": "83",
+    "spend": "44322",
+    "frequency": "2.45",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "68772"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-06",
+    "date_stop": "2026-10-06",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8488",
+    "clicks": "159",
+    "spend": "67902",
+    "frequency": "1.68",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "432803"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-06",
+    "date_stop": "2026-10-06",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6815",
+    "clicks": "82",
+    "spend": "47704",
+    "frequency": "1.81",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "157368"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-06",
+    "date_stop": "2026-10-06",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4067",
+    "clicks": "93",
+    "spend": "48799",
+    "frequency": "2.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "274871"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-06",
+    "date_stop": "2026-10-06",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8348",
+    "clicks": "72",
+    "spend": "41741",
+    "frequency": "1.49",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "67666"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-06",
+    "date_stop": "2026-10-06",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "7098",
+    "clicks": "40",
+    "spend": "35488",
+    "frequency": "1.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "59312"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-07",
+    "date_stop": "2026-10-07",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7528",
+    "clicks": "107",
+    "spend": "52696",
+    "frequency": "1.86",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "140194"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-07",
+    "date_stop": "2026-10-07",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5674",
+    "clicks": "82",
+    "spend": "42558",
+    "frequency": "2.90",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "135512"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-07",
+    "date_stop": "2026-10-07",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8460",
+    "clicks": "174",
+    "spend": "67680",
+    "frequency": "1.69",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "431879"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-07",
+    "date_stop": "2026-10-07",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6401",
+    "clicks": "69",
+    "spend": "44810",
+    "frequency": "1.85",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "78387"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-07",
+    "date_stop": "2026-10-07",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4111",
+    "clicks": "97",
+    "spend": "49330",
+    "frequency": "2.59",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "266475"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-07",
+    "date_stop": "2026-10-07",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8551",
+    "clicks": "69",
+    "spend": "42753",
+    "frequency": "1.46",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "66422"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-07",
+    "date_stop": "2026-10-07",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "7160",
+    "clicks": "43",
+    "spend": "35799",
+    "frequency": "1.60",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-08",
+    "date_stop": "2026-10-08",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7650",
+    "clicks": "103",
+    "spend": "53552",
+    "frequency": "1.89",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "132641"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-08",
+    "date_stop": "2026-10-08",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5768",
+    "clicks": "69",
+    "spend": "43258",
+    "frequency": "3.22",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "124935"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-08",
+    "date_stop": "2026-10-08",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8575",
+    "clicks": "166",
+    "spend": "68602",
+    "frequency": "1.72",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "476895"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-08",
+    "date_stop": "2026-10-08",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6600",
+    "clicks": "85",
+    "spend": "46203",
+    "frequency": "1.84",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "151433"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-08",
+    "date_stop": "2026-10-08",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4020",
+    "clicks": "92",
+    "spend": "48241",
+    "frequency": "2.63",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "265558"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-08",
+    "date_stop": "2026-10-08",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8654",
+    "clicks": "68",
+    "spend": "43268",
+    "frequency": "1.54",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-08",
+    "date_stop": "2026-10-08",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6843",
+    "clicks": "43",
+    "spend": "34216",
+    "frequency": "1.57",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-09",
+    "date_stop": "2026-10-09",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7481",
+    "clicks": "90",
+    "spend": "52366",
+    "frequency": "1.86",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "125515"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-09",
+    "date_stop": "2026-10-09",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5754",
+    "clicks": "64",
+    "spend": "43157",
+    "frequency": "3.61",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "149852"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-09",
+    "date_stop": "2026-10-09",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8673",
+    "clicks": "177",
+    "spend": "69381",
+    "frequency": "1.70",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "6"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "448427"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-09",
+    "date_stop": "2026-10-09",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6844",
+    "clicks": "85",
+    "spend": "47908",
+    "frequency": "1.79",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "158675"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-09",
+    "date_stop": "2026-10-09",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4012",
+    "clicks": "105",
+    "spend": "48147",
+    "frequency": "2.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "278539"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-09",
+    "date_stop": "2026-10-09",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8414",
+    "clicks": "63",
+    "spend": "42071",
+    "frequency": "1.51",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "73789"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-09",
+    "date_stop": "2026-10-09",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6854",
+    "clicks": "38",
+    "spend": "34268",
+    "frequency": "1.62",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "63564"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-10",
+    "date_stop": "2026-10-10",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7440",
+    "clicks": "91",
+    "spend": "52080",
+    "frequency": "1.90",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "140608"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-10",
+    "date_stop": "2026-10-10",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5753",
+    "clicks": "56",
+    "spend": "43148",
+    "frequency": "3.94",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "133095"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-10",
+    "date_stop": "2026-10-10",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8853",
+    "clicks": "180",
+    "spend": "70826",
+    "frequency": "1.65",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "7"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "605225"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-10",
+    "date_stop": "2026-10-10",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6453",
+    "clicks": "73",
+    "spend": "45168",
+    "frequency": "1.84",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "68004"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-10",
+    "date_stop": "2026-10-10",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4144",
+    "clicks": "97",
+    "spend": "49732",
+    "frequency": "2.67",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "273750"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-10",
+    "date_stop": "2026-10-10",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8258",
+    "clicks": "64",
+    "spend": "41290",
+    "frequency": "1.48",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "65005"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-10",
+    "date_stop": "2026-10-10",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6978",
+    "clicks": "46",
+    "spend": "34890",
+    "frequency": "1.56",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-11",
+    "date_stop": "2026-10-11",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7388",
+    "clicks": "100",
+    "spend": "51719",
+    "frequency": "1.94",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "151586"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-11",
+    "date_stop": "2026-10-11",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5673",
+    "clicks": "48",
+    "spend": "42546",
+    "frequency": "4.37",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "75481"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-11",
+    "date_stop": "2026-10-11",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8378",
+    "clicks": "153",
+    "spend": "67026",
+    "frequency": "1.67",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "355888"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-11",
+    "date_stop": "2026-10-11",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6671",
+    "clicks": "88",
+    "spend": "46699",
+    "frequency": "1.80",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "78403"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-11",
+    "date_stop": "2026-10-11",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4054",
+    "clicks": "105",
+    "spend": "48650",
+    "frequency": "2.66",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "4"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "279740"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-11",
+    "date_stop": "2026-10-11",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8555",
+    "clicks": "62",
+    "spend": "42776",
+    "frequency": "1.53",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-11",
+    "date_stop": "2026-10-11",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "7088",
+    "clicks": "47",
+    "spend": "35439",
+    "frequency": "1.63",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-12",
+    "date_stop": "2026-10-12",
+    "ad_id": "ad-a01",
+    "adset_id": "as-interest",
+    "impressions": "7843",
+    "clicks": "110",
+    "spend": "54902",
+    "frequency": "1.90",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "135814"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-12",
+    "date_stop": "2026-10-12",
+    "ad_id": "ad-a02",
+    "adset_id": "as-interest",
+    "impressions": "5868",
+    "clicks": "50",
+    "spend": "44012",
+    "frequency": "4.69",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "74670"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-12",
+    "date_stop": "2026-10-12",
+    "ad_id": "ad-b01",
+    "adset_id": "as-lookalike",
+    "impressions": "8667",
+    "clicks": "160",
+    "spend": "69333",
+    "frequency": "1.70",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "376744"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-12",
+    "date_stop": "2026-10-12",
+    "ad_id": "ad-b02",
+    "adset_id": "as-lookalike",
+    "impressions": "6404",
+    "clicks": "77",
+    "spend": "44829",
+    "frequency": "1.77",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "2"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "142446"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-12",
+    "date_stop": "2026-10-12",
+    "ad_id": "ad-c01",
+    "adset_id": "as-retarget",
+    "impressions": "4718",
+    "clicks": "116",
+    "spend": "56612",
+    "frequency": "2.67",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "5"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "392884"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-12",
+    "date_stop": "2026-10-12",
+    "ad_id": "ad-d01",
+    "adset_id": "as-broad",
+    "impressions": "8574",
+    "clicks": "69",
+    "spend": "42869",
+    "frequency": "1.52",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "1"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "64959"
+     }
+    ]
+   },
+   {
+    "date_start": "2026-10-12",
+    "date_stop": "2026-10-12",
+    "ad_id": "ad-d02",
+    "adset_id": "as-broad",
+    "impressions": "6830",
+    "clicks": "41",
+    "spend": "34151",
+    "frequency": "1.58",
+    "actions": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ],
+    "action_values": [
+     {
+      "action_type": "purchase",
+      "value": "0"
+     }
+    ]
+   }
+  ]
+ }
+}

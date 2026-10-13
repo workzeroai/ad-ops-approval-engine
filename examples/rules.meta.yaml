@@ -1,0 +1,41 @@
+# 사용자 정의 규칙 예시 (메타형) — 위닝 기준을 더 엄격하게
+#   adops plan --account mt-fitroutine --rules examples/rules.meta.yaml
+#
+# 기본 규칙(adops/rules/defaults/meta.yaml)과 다른 점
+# - 위닝 조건: ROAS 500% 이상 + 전환 30건 이상 + 계정 1등(roas_rank_pct == 0)
+# - 증액 폭 15%, 학습 기간 보호 5일
+# - 소재 중지는 피로(CTR -40% 이하 + 빈도 4회 이상)일 때만
+version: 1
+platform: meta_like
+
+guardrails:
+  max_change_pct: 15
+  max_changes_per_day: 3
+  cooldown_days: 5
+  max_retries: 2
+  bounds:
+    daily_budget: {min: 10000, max: 500000}
+
+rules:
+  - id: mt-winning-scale-up-strict
+    name: 계정 1위 광고 세트만 예산 증액
+    entity: adset
+    when:
+      all:
+        - {metric: roas_7d, op: ">=", value: 500}
+        - {metric: conv_7d, op: ">=", value: 30}
+        - {metric: roas_rank_pct, op: "==", value: 0}
+    action: {field: daily_budget, op: increase_pct, value: 15, round_to: 1000}
+    risk: medium
+    reason: 최근 7일 ROAS {roas_7d}, 전환 {conv_7d}건으로 계정 1위라 일예산을 15% 늘립니다.
+
+  - id: mt-creative-fatigue-pause-strict
+    name: 피로가 뚜렷한 소재만 중지
+    entity: ad
+    when:
+      all:
+        - {metric: ctr_change_pct, op: "<=", value: -40}
+        - {metric: frequency, op: ">=", value: 4}
+    action: {field: status, op: pause}
+    risk: medium
+    reason: 직전 7일 대비 CTR 변화 {ctr_change_pct}, 빈도 {frequency}라 소재를 중지합니다.

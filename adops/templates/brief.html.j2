@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>광고 운영 아침 브리핑 · {{ ops_date }}</title>
+<style>
+:root {
+  --ink: #0f172a; --body: #1e293b; --muted: #64748b; --line: #e2e8f0; --zone: #f8fafc; --bg: #f1f5f9;
+  --primary: {{ theme.primary.solid }}; --primary-ink: {{ theme.primary.stroke }}; --primary-fill: {{ theme.primary.fill }};
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Pretendard, 'Pretendard Variable', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+  color: var(--body); background: var(--bg); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 28px 24px 40px; }
+.top { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.logo { width: 34px; height: 34px; border-radius: 9px; background: var(--primary); color: #fff; display: grid;
+  place-items: center; font-weight: 800; font-size: 15px; letter-spacing: -.02em; }
+.top .name { font-weight: 700; color: var(--ink); font-size: 15px; }
+.top .meta { color: var(--muted); font-size: 13px; }
+.top .spacer { flex: 1; }
+.tag { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; border: 1.5px solid; }
+.tag.fake { color: {{ theme.warning.stroke }}; background: {{ theme.warning.fill }}; border-color: {{ theme.warning.stroke }}55; }
+.hero { background: linear-gradient(115deg, #fff 0%, #fff 45%, var(--primary-fill) 100%); border: 1px solid var(--line);
+  border-left: 6px solid var(--primary); border-radius: 14px; padding: 22px 26px; margin-bottom: 18px; }
+.hero h1 { font-size: 26px; color: var(--ink); letter-spacing: -.02em; }
+.hero p { color: var(--muted); margin-top: 4px; }
+.chips { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.chip { font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 999px; background: #fff; border: 1.5px solid; }
+{% for name, r in theme.items() %}
+.r-{{ name }} { color: {{ r.stroke }}; border-color: {{ r.stroke }}55; background: {{ r.fill }}; }
+.bl-{{ name }} { border-left-color: {{ r.solid }} !important; }
+.dot-{{ name }} { background: {{ r.solid }}; }
+{% endfor %}
+h2 { font-size: 17px; color: var(--ink); margin: 26px 0 10px; display: flex; align-items: baseline; gap: 10px; letter-spacing: -.01em; }
+h2 small { font-size: 12.5px; color: var(--muted); font-weight: 400; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+.card-head { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.card-head b { color: var(--ink); font-size: 15px; }
+.pill { font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 6px; border: 1px solid; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.kpi { background: var(--zone); border-radius: 10px; padding: 10px 12px; }
+.kpi .l { color: var(--muted); font-size: 12px; }
+.kpi .v { color: var(--ink); font-weight: 700; font-size: 17px; letter-spacing: -.01em; margin-top: 2px; white-space: nowrap; }
+.kpi .d { font-size: 12px; font-weight: 700; }
+.d.up { color: {{ theme.success.stroke }}; } .d.down { color: {{ theme.danger.stroke }}; } .d.flat { color: var(--muted); }
+.spark { display: flex; align-items: center; gap: 14px; margin-top: 12px; }
+.legend { font-size: 12px; color: var(--muted); display: grid; gap: 4px; }
+.legend i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.alerts { display: grid; gap: 8px; }
+.alert { background: #fff; border: 1px solid var(--line); border-left: 5px solid; border-radius: 10px; padding: 10px 14px; }
+.alert .t { font-weight: 700; color: var(--ink); font-size: 14px; }
+.alert .t .lv { font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 6px; margin-right: 6px; border: 1px solid; vertical-align: 1px; }
+.alert .x { color: var(--body); font-size: 13px; margin-top: 2px; }
+.heat { display: grid; gap: 14px; }
+.heat-block .hh { display: flex; gap: 10px; align-items: baseline; margin-bottom: 6px; }
+.heat-block .hh b { color: var(--ink); }
+.heat-block .hh span { color: var(--muted); font-size: 12.5px; }
+.hgrid { display: grid; grid-template-columns: 78px repeat(24, 1fr) 70px; gap: 2px; align-items: center; }
+.hgrid .lab { font-size: 12px; color: var(--muted); }
+.hgrid .ex { font-size: 12px; font-weight: 700; color: {{ theme.danger.stroke }}; padding-left: 6px; }
+.cell { height: 18px; border-radius: 3px; background: var(--zone); }
+.cell.off { background: repeating-linear-gradient(135deg, {{ theme.danger.fill }} 0 4px, #fff 4px 7px); outline: 1px solid {{ theme.danger.stroke }}22; }
+.hours { font-size: 10.5px; color: var(--muted); text-align: center; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--muted); font-weight: 600; font-size: 12px; padding: 8px 10px; border-bottom: 1px solid var(--line); background: var(--zone); white-space: nowrap; }
+td { padding: 10px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.chg { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.chg .a { color: var(--ink); font-weight: 700; }
+.chg .p { font-size: 12px; font-weight: 700; margin-left: 4px; }
+.why { color: var(--body); }
+.impact { color: var(--muted); font-size: 12px; margin-top: 3px; }
+.note { font-size: 12px; margin-top: 4px; font-weight: 600; }
+.st { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 999px; border: 1.5px solid; white-space: nowrap; display: inline-block; }
+.target b { color: var(--ink); }
+.target span { display: block; color: var(--muted); font-size: 12px; }
+.runhead { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.runhead code { font-family: 'Cascadia Code', Consolas, monospace; font-size: 12.5px; color: var(--primary-ink); background: var(--primary-fill); padding: 2px 8px; border-radius: 6px; }
+.timeline { display: grid; gap: 0; }
+.ev { display: grid; grid-template-columns: 70px 170px 110px 1fr; gap: 10px; align-items: center; padding: 7px 4px; border-bottom: 1px dashed var(--line); font-size: 12.5px; }
+.ev:last-child { border-bottom: none; }
+.ev .tm { color: var(--muted); font-variant-numeric: tabular-nums; }
+.ev .run { font-family: 'Cascadia Code', Consolas, monospace; font-size: 12px; color: var(--muted); }
+.ev .lb { display: flex; align-items: center; gap: 6px; font-weight: 700; color: var(--ink); }
+.ev .lb i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.ev .dt { color: var(--body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.muted { color: var(--muted); }
+footer { margin-top: 28px; color: var(--muted); font-size: 12px; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div id="overview">
+<div class="top">
+  <div class="logo">ad</div>
+  <div><div class="name">adops 아침 브리핑</div><div class="meta">운영일 {{ ops_date }} · 실적 기준 {{ as_of }} · 생성 {{ generated }}</div></div>
+  <div class="spacer"></div>
+  <span class="tag fake">가상 데이터 · 데모</span>
+</div>
+
+<section class="hero">
+  <h1>오늘 확인할 것 {{ alert_counts.danger + alert_counts.warning }}건, 조정 후보 {{ accounts | map(attribute='run') | select | map(attribute='changes') | map('length') | sum }}건</h1>
+  <p>{% for a in accounts %}{{ a.name }}({{ a.platform }}){% if not loop.last %} · {% endif %}{% endfor %} — 규칙이 만든 조정안은 사람이 승인한 것만 반영되고, 반영 뒤 다시 조회해 검증합니다.</p>
+  <div class="chips">
+    <span class="chip r-danger">위험 {{ alert_counts.danger }}</span>
+    <span class="chip r-warning">주의 {{ alert_counts.warning }}</span>
+    <span class="chip r-info">참고 {{ alert_counts.info }}</span>
+    <span class="chip r-success">기회 {{ alert_counts.success }}</span>
+  </div>
+</section>
+
+<h2>어제 성과 <small>괄호 안은 최근 7일 평균 대비</small></h2>
+<div class="grid2">
+{% for a in accounts %}
+  <div class="card">
+    <div class="card-head"><b>{{ a.name }}</b><span class="pill r-{{ 'info' if a.platform == '검색광고형' else 'accent' }}">{{ a.platform }}</span></div>
+    <div class="kpis">
+      {% for k in a.kpis %}
+      <div class="kpi"><div class="l">{{ k.label }}</div><div class="v">{{ k.value }}</div><div class="d {{ k.delta.cls }}">{{ k.delta.text }}</div></div>
+      {% endfor %}
+    </div>
+    <div class="spark">
+      <svg width="{{ a.spark_spend.width }}" height="{{ a.spark_spend.height }}" viewBox="0 0 {{ a.spark_spend.width }} {{ a.spark_spend.height }}" role="img" aria-label="28일 추세">
+        <polygon points="{{ a.spark_revenue.area }}" fill="{{ theme.success.fill }}" opacity=".7"/>
+        <polyline points="{{ a.spark_revenue.points }}" fill="none" stroke="{{ theme.success.solid }}" stroke-width="2" stroke-linejoin="round"/>
+        <polyline points="{{ a.spark_spend.points }}" fill="none" stroke="{{ theme.primary.solid }}" stroke-width="2" stroke-linejoin="round" stroke-dasharray="0"/>
+        <circle cx="{{ a.spark_spend.last[0] }}" cy="{{ a.spark_spend.last[1] }}" r="3" fill="{{ theme.primary.solid }}"/>
+      </svg>
+      <div class="legend">
+        <span><i style="background: {{ theme.primary.solid }}"></i>일 비용</span>
+        <span><i style="background: {{ theme.success.solid }}"></i>일 전환 매출</span>
+        <span>28일 · {{ a.spark_range }}</span>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<h2>진단 경보 <small>규칙과 별개로, 사람이 먼저 읽어야 할 신호</small></h2>
+<div class="grid2">
+{% for a in accounts %}
+  <div class="alerts">
+    {% for f in a.findings %}
+    <div class="alert bl-{{ f.level }}">
+      <div class="t"><span class="lv r-{{ f.level }}">{{ {'danger': '위험', 'warning': '주의', 'info': '참고', 'success': '기회'}[f.level] }}</span>{{ f.title }}</div>
+      <div class="x">{{ f.detail }}</div>
+    </div>
+    {% else %}
+    <div class="alert bl-neutral"><div class="x muted">경보 없음</div></div>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
+
+{% for a in accounts if a.heat %}
+</div>
+<div id="heat-section">
+<h2>예산 소진 시간대 <small>{{ a.name }} · 최근 7일 시간대별 노출, 빗금 = 예산 소진으로 노출이 멈춘 시간</small></h2>
+<div class="card heat">
+  {% for h in a.heat %}
+  <div class="heat-block">
+    <div class="hh"><b>{{ h.name }}</b><span>현재 일예산 {{ '{:,}'.format(h.budget) }}원 · 최근 7일 중 {{ h.exhausted }}일 소진</span></div>
+    <div class="hgrid">
+      {% for row in h.rows %}
+      <div class="lab">{{ row.label }}</div>
+      {% for c in row.cells %}<div class="cell{% if c.off %} off{% endif %}" title="{{ c.title }}"{% if c.alpha and not c.off %} style="background: rgba(79,70,229,{{ c.alpha }})"{% endif %}></div>{% endfor %}
+      <div class="ex">{{ row.exhaust }}</div>
+      {% endfor %}
+      <div></div>{% for hr in hours %}<div class="hours">{% if hr % 3 == 0 %}{{ hr }}{% endif %}</div>{% endfor %}<div></div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
+
+</div>
+<div id="runs-section">
+<h2>조정안과 실행 결과 <small>규칙 → 미리보기(안전장치) → 사람 승인 → 반영 → 재조회 검증</small></h2>
+{% for a in accounts if a.run %}
+<div class="card" style="margin-bottom: 14px">
+  <div class="runhead">
+    <b style="color: var(--ink)">{{ a.name }}</b><code>{{ a.run.id }}</code>
+    {% for label, n in a.run.counts.items() %}<span class="muted" style="font-size: 12.5px">{{ label }} {{ n }}</span>{% if not loop.last %}<span class="muted">·</span>{% endif %}{% endfor %}
+  </div>
+  <table>
+    <thead><tr><th style="width: 34px">#</th><th style="width: 190px">대상</th><th style="width: 210px">변경</th><th>근거 · 예상 영향</th><th style="width: 110px">상태</th></tr></thead>
+    <tbody>
+    {% for c in a.run.changes %}
+    <tr>
+      <td class="muted">{{ c.seq }}</td>
+      <td class="target"><b>{{ c.target }}</b><span>{{ c.kind }} · {{ c.field }}</span></td>
+      <td class="chg">{{ c.before }} → <span class="a">{{ c.after }}</span>{% if c.pct %}<span class="p {{ 'd up' if c.pct.startswith('+') else 'd down' }}">{{ c.pct }}</span>{% endif %}</td>
+      <td><div class="why">{{ c.reason }}</div><div class="impact">{{ c.impact }}</div>{% if c.note %}<div class="note" style="color: {{ theme[c.role].stroke }}">{{ c.note }}</div>{% endif %}</td>
+      <td><span class="st r-{{ c.role }}">{{ c.status }}</span></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% else %}
+<div class="card muted">아직 만든 조정안이 없습니다. <code>adops plan</code>으로 만듭니다.</div>
+{% endfor %}
+
+</div>
+<div id="ranking-section">
+<h2>성과 순위 <small>최근 7일 ROAS 순</small></h2>
+<div class="grid2">
+{% for a in accounts %}
+  <div class="card">
+    <div class="card-head"><b>{{ a.ranking_kind }}</b><span class="muted" style="font-size: 12.5px">{{ a.name }}</span></div>
+    <table>
+      <thead><tr><th>{{ a.ranking_kind }}</th><th class="num" style="text-align:right">비용</th><th class="num" style="text-align:right">CTR</th><th class="num" style="text-align:right">전환</th><th class="num" style="text-align:right">ROAS</th>{% if a.ranking_kind == '키워드' %}<th class="num" style="text-align:right">순위</th>{% else %}<th class="num" style="text-align:right">빈도</th>{% endif %}</tr></thead>
+      <tbody>
+      {% for r in a.ranking[:7] %}
+      <tr>
+        <td class="target"><b>{{ r.name }}</b><span>{{ r.parent }}{% if r.status == 'PAUSED' %} · 중지됨{% endif %}</span></td>
+        <td class="num">{{ '{:,.0f}'.format(r.spend or 0) }}</td>
+        <td class="num">{{ '%.2f' % (r.ctr or 0) }}%</td>
+        <td class="num">{{ '%.0f' % (r.conv or 0) }}</td>
+        <td class="num" style="font-weight: 700; color: {{ theme.success.stroke if (r.roas or 0) >= 400 else (theme.danger.stroke if (r.roas or 0) < 100 else 'var(--ink)') }}">{{ '{:,.0f}'.format(r.roas or 0) }}%</td>
+        {% if a.ranking_kind == '키워드' %}<td class="num">{{ '%.1f' % r.rank if r.rank else '-' }}</td>{% else %}<td class="num">{{ '%.1f' % r.frequency if r.frequency else '-' }}</td>{% endif %}
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endfor %}
+</div>
+
+</div>
+<div id="history-section">
+<h2>최근 실행 이력 <small>감사 로그(SQLite) 최근 {{ events | length }}건</small></h2>
+<div class="card timeline">
+  {% for e in events %}
+  <div class="ev">
+    <span class="tm">{{ e.time }}</span>
+    <span class="run">{{ e.run }}{% if e.target %} {{ e.target }}{% endif %}</span>
+        <span class="lb"><i class="dot-{{ e.role }}"></i>{{ e.label }}</span>
+    <span class="dt" title="{{ e.detail }}">{{ e.detail }} <span class="muted">· {{ e.actor }}</span></span>
+  </div>
+  {% else %}
+  <div class="muted">기록 없음</div>
+  {% endfor %}
+</div>
+
+</div>
+<footer>
+  <span>모든 수치는 생성 스크립트로 만든 가상 데이터입니다. 실제 광고 계정과 무관합니다.</span>
+  <span>ad-ops-approval-engine v{{ version }} · <code>adops brief</code></span>
+</footer>
+</div>
+</body>
+</html>

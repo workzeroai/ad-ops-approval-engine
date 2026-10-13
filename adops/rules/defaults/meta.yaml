@@ -1,0 +1,62 @@
+# 메타형 기본 규칙 — 위닝 광고 스케일업
+# - 검색광고형과 다른 점: 예산을 크게 바꾸면 학습 단계가 다시 시작될 수 있어
+#   변경 폭 상한을 20%로 낮추고, 같은 광고 세트는 3일 안에 다시 바꾸지 않는다(cooldown_days).
+# - 위에 있는 규칙이 우선순위가 높다.
+version: 1
+platform: meta_like
+
+guardrails:
+  max_change_pct: 20
+  max_changes_per_day: 6
+  cooldown_days: 3          # 학습 기간 보호
+  max_retries: 2
+  bounds:
+    daily_budget: {min: 10000, max: 1000000}
+
+rules:
+  - id: mt-winning-scale-up
+    name: 위닝 광고 세트 예산 증액
+    entity: adset
+    when:
+      all:
+        - {metric: roas_7d, op: ">=", value: 350}
+        - {metric: conv_7d, op: ">=", value: 20}
+        - {metric: roas_rank_pct, op: "<=", value: 50}   # 계정 안 ROAS 상위 절반
+    action: {field: daily_budget, op: increase_pct, value: 20, round_to: 1000}
+    risk: medium
+    reason: >-
+      최근 7일 ROAS {roas_7d}, 전환 {conv_7d}건으로 계정 안 상위 절반에 들어
+      위닝 조건을 넘었으므로 일예산을 20% 늘립니다.
+
+  - id: mt-low-roas-budget-down
+    name: ROAS 100% 미만 광고 세트 예산 감액
+    entity: adset
+    when:
+      all:
+        - {metric: roas_7d, op: "<", value: 100}
+        - {metric: spend_7d, op: ">=", value: 300000}
+    action: {field: daily_budget, op: decrease_pct, value: 20, round_to: 1000, min: 10000}
+    risk: low
+    reason: 최근 7일 {spend_7d}을 썼지만 ROAS {roas_7d}로 광고비를 회수하지 못해 일예산을 줄입니다.
+
+  - id: mt-creative-fatigue-pause
+    name: 피로 누적 소재 중지
+    entity: ad
+    when:
+      all:
+        - {metric: ctr_change_pct, op: "<=", value: -30}
+        - {metric: frequency, op: ">=", value: 3.5}
+    action: {field: status, op: pause}
+    risk: medium
+    reason: 직전 7일 대비 CTR 변화 {ctr_change_pct}, 빈도 {frequency}로 같은 사람에게 반복 노출돼 소재 피로로 보고 중지합니다.
+
+  - id: mt-loser-creative-pause
+    name: 저성과 소재 중지
+    entity: ad
+    when:
+      all:
+        - {metric: roas_7d, op: "<", value: 70}
+        - {metric: spend_7d, op: ">=", value: 150000}
+    action: {field: status, op: pause}
+    risk: medium
+    reason: 최근 7일 {spend_7d}을 쓰고 ROAS {roas_7d}에 그쳐 소재를 중지합니다.

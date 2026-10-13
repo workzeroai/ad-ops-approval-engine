@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ad-ops-approval-engine"
+version = "0.1.0"
+description = "광고 조정안은 규칙으로 자동 제안하고, 반영은 사람 승인 뒤에만 하는 승인형 광고 운영 엔진 (가짜 광고 API 데모 포함)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "workzeroai" }]
+keywords = ["ads", "automation", "rules-engine", "approval", "audit-log", "marketing-ops"]
+classifiers = [
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "typer>=0.12",
+  "rich>=13",
+  "pydantic>=2.6",
+  "pyyaml>=6",
+  "jinja2>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6"]
+
+[project.scripts]
+adops = "adops.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["adops*"]
+
+[tool.setuptools.package-data]
+adops = ["rules/defaults/*.yaml", "templates/*.j2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=adops --cov-report=term-missing:skip-covered --cov-fail-under=80"
+
+[tool.coverage.run]
+branch = true
+source = ["adops"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = [".venv", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]  # 한국어 문장 안의 전각·유사 문자 허용

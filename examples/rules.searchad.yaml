@@ -1,0 +1,51 @@
+# 사용자 정의 규칙 예시 (검색광고형) — 기본 규칙보다 보수적으로 운영할 때
+#   adops plan --account sa-fitroutine --rules examples/rules.searchad.yaml
+#
+# 기본 규칙(adops/rules/defaults/searchad.yaml)과 다른 점
+# - 변경 폭 상한 30% → 15%, 하루 반영 상한 10건 → 5건
+# - 예산 증액은 소진일 4일 이상 + ROAS 400% 이상일 때만, 한 번에 10%
+# - 입찰가 인상 규칙은 끄고(enabled: false) 인하 규칙만 쓴다
+version: 1
+platform: searchad_like
+
+guardrails:
+  max_change_pct: 15
+  max_changes_per_day: 5
+  cooldown_days: 2
+  max_retries: 1
+  bounds:
+    bid: {min: 70, max: 5000}
+    daily_budget: {min: 10000, max: 300000}
+
+rules:
+  - id: sa-budget-exhausted-conservative
+    name: 예산 조기 소진 캠페인 일예산 소폭 증액
+    entity: campaign
+    when:
+      all:
+        - {metric: exhausted_days_7d, op: ">=", value: 4}
+        - {metric: roas_7d, op: ">=", value: 400}
+    action: {field: daily_budget, op: increase_pct, value: 10, round_to: 1000}
+    risk: low
+    reason: 최근 7일 중 {exhausted_days_7d} 예산이 소진됐고 ROAS {roas_7d}라 일예산을 10% 늘립니다.
+
+  - id: sa-bid-down-no-conversion
+    name: 전환 없는 키워드 입찰가 인하
+    entity: keyword
+    when:
+      all:
+        - {metric: spend_7d, op: ">=", value: 80000}
+        - {metric: conv_7d, op: "==", value: 0}
+    action: {field: bid, op: decrease_pct, value: 10, round_to: 10, min: 70}
+    risk: low
+    reason: 최근 7일 {spend_7d}을 쓰고 전환이 없어 입찰가를 10% 낮춥니다.
+
+  - id: sa-bid-up-efficient
+    name: 순위 낮고 효율 좋은 키워드 입찰가 인상
+    enabled: false
+    entity: keyword
+    when:
+      all:
+        - {metric: avg_rank_7d, op: ">=", value: 4.0}
+        - {metric: roas_7d, op: ">=", value: 500}
+    action: {field: bid, op: increase_pct, value: 5, round_to: 10}
