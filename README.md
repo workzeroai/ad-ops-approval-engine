@@ -213,6 +213,8 @@ adops plan -a sa-fitroutine -r examples/rules.searchad.yaml   # 내 규칙 파�
 
 It ships with a fake ad platform (search-ads-like and Meta-like adapters behind one interface, with a seeded failure simulator) and a fictional brand, so `pip install -e . && adops demo` runs end to end without API keys. 80 pytest tests, 96% coverage, ruff-clean. Real API adapters, chat-based approval and a web dashboard are listed as next steps. The "in production" figures above are from the author's real work and are unrelated to this demo.
 
+**만든 사람 · Author** — 전병국 · [workzeroai@gmail.com](mailto:workzeroai@gmail.com) · [GitHub](https://github.com/workzeroai) · [포트폴리오](https://workzero.notion.site/AX-_-3d312e3c61c981958e60f69a8f6d546e)
+
 ---
 
 MIT © workzeroai
